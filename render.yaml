@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: hospital-ai-api
+    runtime: python
+    plan: free
+    buildCommand: bash build.sh
+    startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false

@@ -16,3 +16,12 @@ dist/
 .idea/
 .DS_Store
 .gemini/
+
+# Notebooks (not needed for deployment)
+notebooks/
+01_eksplorasi_dataset.ipynb
+
+# Root-level unused scripts
+diet_rules.py
+menu_recommender.py
+app.py

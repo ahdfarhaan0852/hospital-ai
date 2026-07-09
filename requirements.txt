@@ -109,3 +109,6 @@ websocket-client==1.9.0
 Werkzeug==3.1.8
 widgetsnbextension==4.0.15
 gunicorn
+python-dotenv==1.1.0
+supabase==2.15.2
+flask-cors==5.0.1
