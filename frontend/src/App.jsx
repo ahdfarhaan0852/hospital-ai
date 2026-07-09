@@ -855,15 +855,15 @@ function App() {
                   </div>
 
                   {authMode === 'login' ? (
-                    <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start mt-2">
+                    <div className="flex justify-center items-start mt-2">
 
-                      {/* Left: Login Form */}
+                      {/* Login Form */}
                       <form
                         onSubmit={(e) => {
                           e.preventDefault();
                           handleLogin(loginForm.email, loginForm.password, loginForm.accessCode);
                         }}
-                        className="lg:col-span-3 w-full flex flex-col gap-4 bg-slate-950/40 border border-slate-850 p-6 rounded-2xl"
+                        className="max-w-md w-full flex flex-col gap-4 bg-slate-950/40 border border-slate-850 p-6 rounded-2xl"
                       >
                         <h3 className="font-bold text-white text-base border-b border-slate-800 pb-2">Masuk ke Akun</h3>
 
@@ -929,48 +929,6 @@ function App() {
                           </button>
                         </div>
                       </form>
-
-                      {/* Right: Quick Auto-Fill Demo Accounts */}
-                      <div className="lg:col-span-2 w-full flex flex-col gap-4 bg-slate-950/20 border border-dashed border-slate-800 p-6 rounded-2xl">
-                        <h3 className="font-bold text-gdsk-soft text-sm flex items-center gap-1.5">
-                          <Sparkles className="w-4.5 h-4.5 text-gdsk-leaf" />
-                          Uji Coba Cepat (Developer Mode)
-                        </h3>
-                        <p className="text-xs text-slate-400 leading-normal">
-                          Gunakan tombol berikut untuk mengisi form login secara otomatis dengan akun uji coba bawaan.
-                        </p>
-
-                        <div className="flex flex-col gap-2 mt-1">
-                          {[
-                            { name: '1. Pihak RS (Dokter)', email: 'doctor@hospital.com', pass: 'password123', role: 'doctor' },
-                            { name: '2. Halaman Pasien (Order Taker)', email: 'order_taker@hospital.com', pass: 'password123', role: 'order_taker' },
-                            { name: '3. Ahli Gizi (Gizi RSPC)', email: 'nutritionist@hospital.com', pass: 'password123', role: 'nutritionist' },
-                            { name: '4. Dapur Utama RSPC', email: 'vendor1@hospital.com', pass: 'password123', role: 'vendor' },
-                            { name: '5. Admin POS (ADMINPOS)', email: 'admin@hospital.com', pass: 'ADMINPOS', role: 'admin', code: 'ADMINPOS' },
-                          ].map((demo, idx) => (
-                            <button
-                              key={idx}
-                              type="button"
-                              onClick={() => {
-                                setLoginForm({
-                                  email: demo.email,
-                                  password: demo.pass,
-                                  accessCode: demo.code || ''
-                                });
-                                showToast(`Form login terisi: ${demo.role.toUpperCase()}`);
-                              }}
-                              className="text-left p-3 bg-slate-900/50 hover:bg-slate-900 border border-slate-800/80 hover:border-slate-700 rounded-xl transition flex items-center justify-between group"
-                            >
-                              <div className="flex flex-col">
-                                <span className="text-xs font-bold text-white group-hover:text-gdsk-soft transition">{demo.name}</span>
-                                <span className="text-[10px] text-slate-500 mt-0.5">{demo.email}</span>
-                              </div>
-                              <ChevronRight className="w-4 h-4 text-slate-500 group-hover:text-gdsk-leaf transition" />
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-
                     </div>
                   ) : (
                     /* Register View */
