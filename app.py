@@ -1,25 +1,13 @@
-from flask import Flask, request, jsonify
-from diet_rules import map_diagnosis # Mengambil fungsi dari file sebelah
+import sys
+import os
 
-app = Flask(__name__)
+# Insert backend directory into path
+ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
+BACKEND_DIR = os.path.join(ROOT_DIR, 'backend')
+sys.path.insert(0, BACKEND_DIR)
 
-@app.route('/api/health', methods=['GET'])
-def health():
-    return jsonify({"status": "online"}), 200
-
-@app.route('/api/recommend', methods=['POST'])
-def recommend():
-    data = request.json
-    diagnosa = data.get('diagnosa', 'umum')
-    
-    # Panggil fungsi dari diet_rules.py
-    hasil_diet = map_diagnosis(diagnosa)
-    
-    return jsonify({
-        "success": True,
-        "diet_info": hasil_diet,
-        "rekomendasi_menu": ["Menu A", "Menu B", "Menu C"] # Contoh dummy
-    })
+from backend.app import app
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
