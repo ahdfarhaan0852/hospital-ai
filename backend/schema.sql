@@ -1,8 +1,14 @@
 -- SQL SCHEMA FOR HOSPITAL CATERING SYSTEM
 -- Copy and run these queries in your Supabase SQL Editor.
 
+-- Drop old tables if they exist
+DROP TABLE IF EXISTS public.orders CASCADE;
+DROP TABLE IF EXISTS public.menus CASCADE;
+DROP TABLE IF EXISTS public.patients CASCADE;
+DROP TABLE IF EXISTS public.users CASCADE;
+
 -- 1. Create Users Table
-CREATE TABLE IF NOT EXISTS public.users (
+CREATE TABLE public.users (
     id TEXT PRIMARY KEY,
     nama TEXT NOT NULL,
     email TEXT NOT NULL UNIQUE,
@@ -14,7 +20,7 @@ CREATE TABLE IF NOT EXISTS public.users (
 );
 
 -- 2. Create Patients Table
-CREATE TABLE IF NOT EXISTS public.patients (
+CREATE TABLE public.patients (
     id TEXT PRIMARY KEY,
     mrn TEXT NOT NULL UNIQUE,
     nama TEXT NOT NULL,
@@ -23,6 +29,9 @@ CREATE TABLE IF NOT EXISTS public.patients (
     diagnosa TEXT,
     alergi TEXT,
     diet TEXT,
+    berat_badan DOUBLE PRECISION,
+    tingkat_aktivitas TEXT,
+    jenis_kelamin TEXT,
     kalori_target INTEGER,
     protein_target INTEGER,
     lemak_target INTEGER,
@@ -33,7 +42,7 @@ CREATE TABLE IF NOT EXISTS public.patients (
 );
 
 -- 3. Create Menus Table
-CREATE TABLE IF NOT EXISTS public.menus (
+CREATE TABLE public.menus (
     id INTEGER PRIMARY KEY,
     nama_menu TEXT NOT NULL,
     jenis_diet TEXT NOT NULL,
@@ -46,7 +55,7 @@ CREATE TABLE IF NOT EXISTS public.menus (
 );
 
 -- 4. Create Orders Table
-CREATE TABLE IF NOT EXISTS public.orders (
+CREATE TABLE public.orders (
     id TEXT PRIMARY KEY,
     patient_id TEXT NOT NULL REFERENCES public.patients(id) ON DELETE CASCADE,
     items JSONB NOT NULL,
@@ -56,8 +65,7 @@ CREATE TABLE IF NOT EXISTS public.orders (
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW())
 );
 
--- Enable Row Level Security (RLS) or leave it disabled for development
--- For MVP, it's recommended to disable RLS or add open policies for testing:
+-- Disable Row Level Security (RLS) for testing/MVP
 ALTER TABLE public.users DISABLE ROW LEVEL SECURITY;
 ALTER TABLE public.patients DISABLE ROW LEVEL SECURITY;
 ALTER TABLE public.menus DISABLE ROW LEVEL SECURITY;
