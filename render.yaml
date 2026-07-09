@@ -3,7 +3,7 @@ services:
     name: hospital-ai-api
     runtime: python
     plan: free
-    buildCommand: bash build.sh
+    buildCommand: pip install -r requirements-prod.txt && python build_render.py
     startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
     envVars:
       - key: PYTHON_VERSION
