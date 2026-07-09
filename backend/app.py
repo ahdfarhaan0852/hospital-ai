@@ -23,13 +23,18 @@ def index():
     return jsonify({
         "message": "AuraBite AI API Server is online!",
         "database": "supabase" if db.use_supabase else "local_json",
+        "db_error": db.init_error,
         "frontend_url": "http://localhost:5173/",
         "status": "online"
     }), 200
 
 @app.route('/api/health', methods=['GET'])
 def health():
-    return jsonify({"status": "online", "database": "supabase" if db.use_supabase else "local_json"}), 200
+    return jsonify({
+        "status": "online",
+        "database": "supabase" if db.use_supabase else "local_json",
+        "db_error": db.init_error
+    }), 200
 
 # --- AUTH ENDPOINTS ---
 @app.route('/api/auth/register', methods=['POST'])

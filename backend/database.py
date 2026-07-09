@@ -15,6 +15,7 @@ class DatabaseManager:
     def __init__(self):
         self.supabase_client = None
         self.use_supabase = False
+        self.init_error = None
         
         # Check if Supabase variables are set
         if SUPABASE_URL and SUPABASE_KEY and SUPABASE_URL != "YOUR_SUPABASE_URL":
@@ -28,6 +29,7 @@ class DatabaseManager:
                 print("DatabaseManager: Connected to Supabase cloud database successfully.")
             except Exception as e:
                 err_msg = str(e)
+                self.init_error = err_msg
                 if "Could not find the table" in err_msg or "PGRST205" in err_msg:
                     print("DatabaseManager: Connected to Supabase, but required tables are missing. Running in Local JSON fallback mode.")
                     print("--> Action Required: Please run the SQL queries in 'backend/schema.sql' in your Supabase SQL Editor.")
@@ -35,7 +37,9 @@ class DatabaseManager:
                     print(f"DatabaseManager: Failed to connect to Supabase ({e}). Running in Local JSON fallback mode.")
                 self.use_supabase = False
         else:
+            self.init_error = "Supabase credentials not configured (SUPABASE_URL / SUPABASE_KEY are empty or default)"
             print("DatabaseManager: Supabase credentials not configured. Operating in Local JSON fallback mode.")
+
             
         # Define local db paths
         self.local_db_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "local_db"))
