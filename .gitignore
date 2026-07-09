@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+Untitled.ipynb
+
+# Node / JS
+node_modules/
+dist/
+.eslintcache
+
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
+.gemini/

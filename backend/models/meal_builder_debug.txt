@@ -1,0 +1,2 @@
+recommender: <recommendation.MenuRecommender object at 0x000002BDAD5C6FB0>
+menu_data columns: ['id', 'nama_menu', 'jenis_diet', 'kalori_kcal', 'protein_g', 'lemak_g', 'karbohidrat_g', 'kategori', 'vendor_id', 'bahan_makanan', 'sodium_mg', 'sugar_g', 'potassium_mg', 'fiber_g']

@@ -1,0 +1,4 @@
+KeyError: 'sodium_mg'
+df_filtered columns: []
+df columns: ['id', 'nama_menu', 'jenis_diet', 'kalori_kcal', 'protein_g', 'lemak_g', 'karbohidrat_g', 'kategori', 'vendor_id', 'bahan_makanan', 'sodium_mg', 'sugar_g', 'potassium_mg', 'fiber_g']
+self.menu_data columns: ['id', 'nama_menu', 'jenis_diet', 'kalori_kcal', 'protein_g', 'lemak_g', 'karbohidrat_g', 'kategori', 'vendor_id', 'bahan_makanan', 'sodium_mg', 'sugar_g', 'potassium_mg', 'fiber_g']

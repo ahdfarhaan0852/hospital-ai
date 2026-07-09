@@ -1,0 +1,508 @@
+id;nama_menu;jenis_diet;kalori_kcal;protein_g;lemak_g;karbohidrat_g;kategori;vendor_id;bahan_makanan;sodium_mg;sugar_g;potassium_mg;fiber_g
+0;Buah Pisang;Diet Lunak;117.7;1.2;0.1;28.0;dessert;V001;pisang;1.0;12.0;358.0;2.6
+1;Buah Pepaya;Diet Lunak;64.1;0.8;0.1;15.0;dessert;V002;pepaya;1.0;8.0;182.0;1.8
+2;Buah Semangka;Diet Lunak;36.1;0.8;0.1;8.0;dessert;V003;semangka;1.0;6.0;112.0;0.4
+3;Buah Melon;Diet Lunak;44.1;0.8;0.1;10.0;dessert;V001;melon;1.0;8.0;228.0;0.9
+4;Buah Pir;Diet Lunak;64.1;0.8;0.1;15.0;dessert;V002;pir;1.0;10.0;116.0;2.4
+5;Buah Apel Fuji;Diet Lunak;64.1;0.8;0.1;15.0;dessert;V003;apel;1.0;10.0;116.0;2.4
+6;Buah Jeruk;Diet Lunak;64.1;0.8;0.1;15.0;dessert;V001;jeruk;1.0;9.0;181.0;1.8
+7;Anggur;Diet Lunak;64.1;0.8;0.1;15.0;dessert;V002;umum;1.0;15.0;191.0;0.9
+8;Pisang Kepok Kukus;Diet Lunak;117.7;1.2;0.1;28.0;dessert;V003;pisang;1.0;12.0;358.0;2.6
+9;Puding Buah Naga;Diet Lunak;64.1;0.8;0.1;15.0;dessert;V001;umum;1.0;0.0;100.0;1.6
+10;Puding Fruit Cocktail;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V002;umum;45.0;14.0;90.0;0.5
+11;Puding Panna Cotta Chocolate;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V003;susu;45.0;14.0;90.0;0.5
+12;Puding Guava;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V001;umum;45.0;14.0;90.0;0.5
+13;Puding Mocca;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V002;umum;45.0;14.0;90.0;0.5
+14;Puding Mangga;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V003;umum;45.0;14.0;90.0;0.5
+15;Puding Leci;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V001;umum;45.0;14.0;90.0;0.5
+16;Puding Layer;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V002;umum;45.0;14.0;90.0;0.5
+17;Puding Caramel;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V003;umum;45.0;14.0;90.0;0.5
+18;Puding Mousse Chocolate;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V001;susu;45.0;14.0;90.0;0.5
+19;Puding Panna Cotta Strawberry;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V002;susu;45.0;14.0;90.0;0.5
+20;Puding Pandan;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V003;umum;45.0;14.0;90.0;0.5
+21;Puding Selasih;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V001;umum;45.0;14.0;90.0;0.5
+22;Puding Mousse Strawberry;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V002;susu;45.0;14.0;90.0;0.5
+23;Puding Melon;Diet Lunak;44.1;0.8;0.1;10.0;dessert;V003;melon;1.0;8.0;228.0;0.9
+24;Puding Lumut;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V001;umum;45.0;14.0;90.0;0.5
+25;Puding Strawberry;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V002;umum;45.0;14.0;90.0;0.5
+26;Puding Vanilla;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V003;umum;45.0;14.0;90.0;0.5
+27;Brownies Kukus;Diet Lunak;171.0;4.0;3.0;32.0;dessert;V001;terigu;180.0;22.0;90.0;1.2
+28;Donat Meisis;Diet Makanan Biasa;234.0;4.0;10.0;32.0;dessert;V002;terigu;180.0;22.0;90.0;1.2
+29;Roti Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam,terigu;75.0;0.0;220.0;0.5
+30;Fruit Pie;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;terigu;60.0;15.0;90.0;0.5
+31;Fruit Pie DM;Diet DM;136.0;3.0;6.0;17.5;dessert;V002;terigu;60.0;1.5;90.0;0.5
+32;Roti Isi Daging;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V003;daging_sapi,daging,terigu;65.0;0.0;330.0;0.5
+33;Risol Sayur Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+34;Risol Sayur Ayam Panggang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+35;Risol Ayam Panggang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+36;Nagasari;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+37;Nagasari (DM);Diet DM;136.0;3.0;6.0;17.5;dessert;V002;umum;60.0;1.5;90.0;0.5
+38;Nagasari #Santan;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+39;Roti Isi Abon;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V001;terigu;60.0;15.0;90.0;0.5
+40;Talam Santan #Santan;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+41;Roti Isi Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam,terigu;75.0;0.0;220.0;0.5
+42;Pastel Sayur dan Ayam Panggang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+43;Pastel Ayam Panggang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+44;Talam Hijau #Santan;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+45;Talam;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+46;Roti Isi Sosis;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;terigu;15.0;0.0;100.0;0.5
+47;Kue Lumpur Kentang;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;kentang;60.0;15.0;90.0;0.5
+48;Puding Maizena;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V001;umum;45.0;14.0;90.0;0.5
+49;Soes Isi Vla;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+50;Soes Isi Vla (DM);Diet DM;136.0;3.0;6.0;17.5;dessert;V003;umum;60.0;1.5;90.0;0.5
+51;Soes Isi Ayam;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+52;Risol Mayo Panggang;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+53;Talam Santan;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+54;Roti Daging;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V001;daging_sapi,daging,terigu;65.0;0.0;330.0;0.5
+55;Risol Mayo;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+56;Roti Tawar;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V003;terigu;60.0;15.0;90.0;0.5
+57;Roti Bakar;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V001;terigu;60.0;15.0;90.0;0.5
+58;Nasi Goreng Oriental;Diet Makanan Biasa;376.0;7.0;12.0;60.0;pokok;V002;umum;450.0;3.5;29.0;0.4
+59;Nasi Putih;Diet Makanan Biasa;242.5;4.5;0.5;55.0;pokok;V003;umum;2.0;0.1;29.0;0.4
+60;Bachian Soun Kentang Wortel;Diet Lunak;33.8;1.0;0.2;7.0;sayur;V001;wortel,kentang;55.0;0.0;400.0;1.6
+61;Garlic Bread;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V002;terigu;15.0;0.0;100.0;0.5
+62;Croquette Potatoes;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;umum;15.0;0.0;100.0;0.5
+63;Corn on the Cob;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V001;umum;15.0;0.0;100.0;0.5
+64;Buttered Parsley Potatoes;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V002;susu;15.0;0.0;100.0;0.5
+65;Mie Goreng Oriental;Diet Makanan Biasa;324.0;8.0;8.0;55.0;pokok;V003;terigu;380.0;2.0;60.0;1.0
+66;Wedges Potatoes;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V001;umum;15.0;0.0;100.0;0.5
+67;Fuyung Hai;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;umum;15.0;0.0;100.0;0.5
+68;Corn Chowder;Diet Lunak;141.0;3.0;1.0;30.0;pokok;V003;umum;15.0;0.0;100.0;0.5
+69;Mashed Potatoes;Diet Lunak;141.0;3.0;1.0;30.0;pokok;V001;umum;15.0;0.0;100.0;0.5
+70;Japchae;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V002;umum;15.0;0.0;100.0;0.5
+71;Potatoes in Jacket;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;umum;15.0;0.0;100.0;0.5
+72;Bihun Kuah;Diet Lunak;279.0;8.0;3.0;55.0;pokok;V001;terigu;380.0;2.0;60.0;1.0
+73;Yakitori;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;umum;15.0;0.0;100.0;0.5
+74;Lyonnaise Potatoes;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;umum;15.0;0.0;100.0;0.5
+75;Yangnyeom Tongdak;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;umum;15.0;0.0;100.0;0.5
+76;Bihun Goreng Oriental;Diet Makanan Biasa;324.0;8.0;8.0;55.0;pokok;V002;terigu;380.0;2.0;60.0;1.0
+77;Spaghetti Bolognese;Diet Makanan Biasa;324.0;8.0;8.0;55.0;pokok;V003;terigu;15.0;0.0;100.0;0.5
+78;Kwetiaw Goreng Oriental;Diet Makanan Biasa;324.0;8.0;8.0;55.0;pokok;V001;umum;15.0;0.0;100.0;0.5
+79;Tomato Mosaic;Diet Makanan Biasa;21.8;1.0;0.2;4.0;sayur;V002;umum;55.0;0.0;230.0;1.2
+80;Soto Bandung;Diet Lunak;103.0;18.0;3.0;1.0;lauk_utama;V003;umum;415.0;0.0;100.0;0.5
+81;Caulilflower Au Gratin;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;umum;55.0;0.0;180.0;1.8
+82;Nasi Goreng Spesial;Diet Makanan Biasa;376.0;7.0;12.0;60.0;pokok;V002;umum;450.0;3.5;29.0;0.4
+83;Mie Godog Jawa;Diet Makanan Biasa;324.0;8.0;8.0;55.0;pokok;V003;terigu;380.0;2.0;60.0;1.0
+84;Sambal Goreng Kentang;Diet Makanan Biasa;121.8;2.0;0.2;28.0;pokok;V001;kentang;6.0;0.8;396.0;2.0
+85;Buttered Baby Green Beans;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;susu;55.0;0.0;180.0;1.8
+86;Soto Bangkong;Diet Lunak;103.0;18.0;3.0;1.0;lauk_utama;V003;umum;415.0;0.0;100.0;0.5
+87;Nasi Kuning;Diet Makanan Biasa;276.0;5.0;4.0;55.0;pokok;V001;umum;120.0;0.1;29.0;0.4
+88;Cantonese Fried Noodle;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V002;terigu;15.0;0.0;100.0;0.5
+89;Gulai Daun Singkong;Diet Makanan Biasa;110.8;3.5;7.2;8.0;sayur;V003;umum;415.0;0.0;350.0;2.5
+90;Perkedel Kentang;Diet Makanan Biasa;121.8;2.0;0.2;28.0;pokok;V001;kentang;6.0;0.8;396.0;2.0
+91;Laksa Penang;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V002;umum;15.0;0.0;100.0;0.5
+92;Lontong Cap Gomeh;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;umum;15.0;0.0;100.0;0.5
+93;Baked Creamy Pure Potatoes;Diet Lunak;141.0;3.0;1.0;30.0;pokok;V001;susu;15.0;0.0;100.0;0.5
+94;Rawon Surabaya;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V002;umum;415.0;0.0;100.0;0.5
+95;Tom Yum Goong;Diet Lunak;97.0;17.0;3.0;0.5;lauk_utama;V003;umum;15.0;0.0;100.0;0.5
+96;William Potatoes;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V001;umum;15.0;0.0;100.0;0.5
+97;Spaghetti Carbonara;Diet Makanan Biasa;324.0;8.0;8.0;55.0;pokok;V002;terigu;15.0;0.0;100.0;0.5
+98;Bola-Bola Ubi;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+99;Pisak Kepok Kukus;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+100;Ongol-Ongol;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+101;Hunkwe Marmer;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+102;Mini Pizza;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+103;Getuk Singkong;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+104;Sawut Singkong;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+105;Cantik Manis;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+106;Cantik Manis (DM);Diet DM;136.0;3.0;6.0;17.5;dessert;V002;umum;60.0;1.5;90.0;0.5
+107;Roti Abon;Diet Makanan Biasa;172.0;6.0;4.0;28.0;pokok;V003;terigu;280.0;6.0;95.0;1.5
+108;Kelepon Ubi Ungu;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+109;Sosis Solo;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;umum;15.0;0.0;100.0;0.5
+110;Sosis Solo Panggang;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V003;umum;15.0;0.0;100.0;0.5
+111;Lapis Surabaya;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+112;Biji Salak;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+113;Putu Ayu;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+114;Sate Cenil Singkong;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+115;Putu Ayu #Kelapa;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+116;Lapis Singkong;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+117;Bolu Kukus Mekar Coklat Pandan;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+118;Getuk Singkong #Kelapa;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+119;Singkong Thailand;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+120;Lapis Pepe;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+121;Getuk Ubi;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+122;Cake Roll Batik;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;terigu;60.0;15.0;90.0;0.5
+123;Getuk Ubi Ungu;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+124;Bitter Ballen;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+125;Bitter Ballen Panggang;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+126;Bitter Ballen Panggang #SS;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+127;Mataroda;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+128;Crackers Isi Selai Strawberry;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+129;Roti Tawar Pandan Isi Vanilla Cream;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V001;susu,terigu;60.0;15.0;90.0;0.5
+130;Crackers Isi Selai Srikaya;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+131;Roti Tawar Pandan Isi Selai Strawberry;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V003;terigu;60.0;15.0;90.0;0.5
+132;Crackers Isi Selai Blueberry;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+133;Roti Tawar Pandan Isi Selai Srikaya;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;terigu;60.0;15.0;90.0;0.5
+134;Crackers Isi Selai Vanilla Cream;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V003;susu;60.0;15.0;90.0;0.5
+135;Roti Tawar Isi Selai Kacang;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V001;kacang,terigu;60.0;15.0;90.0;0.5
+136;Roti Tawar Pandan Isi Blueberry;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;terigu;60.0;15.0;90.0;0.5
+137;Makanan;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;umum;15.0;0.0;100.0;0.5
+138;Minuman;Diet Cair;166.0;3.0;6.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+139;Ketimus Singkong;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+140;Roti Tawar Isi Selai Vanilla Cream;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V003;susu,terigu;60.0;15.0;90.0;0.5
+141;Cantonese-Fried-Noodle;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V001;terigu;15.0;0.0;100.0;0.5
+142;Mie Godog Jawa Vegetarian;Diet Makanan Biasa;324.0;8.0;8.0;55.0;pokok;V002;terigu;380.0;2.0;60.0;1.0
+143;Ayam Bakar Kecap;Diet Makanan Biasa;217.0;20.0;15.0;0.5;lauk_utama;V003;ayam,kedelai;325.0;0.0;220.0;0.5
+144;Steak Ikan Oriental;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;daging_sapi,daging,ikan;60.0;0.0;280.0;0.5
+145;Ayam Lada Hitam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+146;Fish Jambalaya;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V003;ikan;15.0;0.0;100.0;0.5
+147;Ikan Bumbu Tomat;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;ikan;60.0;0.0;280.0;0.5
+148;Ayam Masak Habang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+149;Chicken Katsu;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+150;Chicken Katsu Panggang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;15.0;0.0;100.0;0.5
+151;Beef Teppanyaki;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;daging_sapi,daging;15.0;0.0;100.0;0.5
+152;Roasted Chicken w/ Tomato Sauce;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+153;Ikan Rica-Rica;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;ikan;60.0;0.0;280.0;0.5
+154;Ayam Garang Asam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+155;Bistik Ayam Oriental;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam,daging_sapi,daging;475.0;0.0;220.0;0.5
+156;Beef Teriyaki;Diet Makanan Biasa;222.0;18.0;14.0;6.0;lauk_utama;V001;daging_sapi,daging;15.0;0.0;100.0;0.5
+157;Coq Au Vin Blanc;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;umum;15.0;0.0;100.0;0.5
+158;Ayam Singgang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+159;Orak-Arik Daging;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V001;daging_sapi,daging;65.0;0.0;330.0;0.5
+160;Ikan Szechuan;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V002;ikan;60.0;0.0;280.0;0.5
+161;Beef Frank Shaslik w/ BBQ Sauce;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V003;daging_sapi,daging;15.0;0.0;100.0;0.5
+162;Ikan Masak Kemangi;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;ikan;60.0;0.0;280.0;0.5
+163;Sapi Lada Hitam;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V002;daging_sapi,daging;65.0;0.0;330.0;0.5
+164;Ayam Panggang Thailand;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+165;Grilled Chicken w/ Tomato Salsa Sauce;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;15.0;0.0;100.0;0.5
+166;Soto Ayam;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V002;ayam;475.0;0.0;220.0;0.5
+167;Ayam Bakar Cianjur;Diet Makanan Biasa;217.0;20.0;15.0;0.5;lauk_utama;V003;ayam;325.0;0.0;220.0;0.5
+168;Ikan Panggang Dabu-Dabu;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;ikan;60.0;0.0;280.0;0.5
+169;Tim Ikan Hainan;Diet Lunak;101.0;18.0;3.0;0.5;lauk_utama;V002;ikan;140.0;0.0;280.0;0.5
+170;Ayam Kluyuk;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+171;Fish steak a la Meuniere;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;daging_sapi,daging,ikan;15.0;0.0;100.0;0.5
+172;Pepes Ayam;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V002;ayam;155.0;0.0;220.0;0.5
+173;Empal Gentong;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V003;daging_sapi,daging;15.0;0.0;100.0;0.5
+174;Ikan Asam Manis;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;ikan;60.0;0.0;280.0;0.5
+175;Beef Steak w/ Demi-Glace Sauce;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;daging_sapi,daging;15.0;0.0;100.0;0.5
+176;Ikan Woku;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V003;ikan;60.0;0.0;280.0;0.5
+177;Ayam Goreng Kecap;Diet Makanan Biasa;217.0;20.0;15.0;0.5;lauk_utama;V001;ayam,kedelai;325.0;0.0;220.0;0.5
+178;Steam Ayam Saus Tiram;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+179;Grilled Barbeque Fish;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V003;ikan;15.0;0.0;100.0;0.5
+180;Chicken Sandwich;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;15.0;0.0;100.0;0.5
+181;Ayam Rica-Rica;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+182;Chicken Kung Pao;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+183;Pan Seared Chicken;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;15.0;0.0;100.0;0.5
+184;Burger Daging Saus Barbeque;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V002;daging_sapi,daging;65.0;0.0;330.0;0.5
+185;Paklay Hati Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+186;Beef Cannelloni w/ BBQ Sauce;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;daging_sapi,daging;15.0;0.0;100.0;0.5
+187;Kalio Daging;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V002;daging_sapi,daging;65.0;0.0;330.0;0.5
+188;Besengek Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+189;Ayam Pandan;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+190;Fish Picatta w/ Bechamel Sauce;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;daging_sapi,daging,ikan;15.0;0.0;100.0;0.5
+191;Ikan Bumbu Kuning;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V003;ikan;60.0;0.0;280.0;0.5
+192;Ayam Bakar Padang;Diet Makanan Biasa;217.0;20.0;15.0;0.5;lauk_utama;V001;ayam;325.0;0.0;220.0;0.5
+193;Ikan Goreng Tepung Asam Manis;Diet Makanan Biasa;193.0;18.0;11.0;5.5;lauk_utama;V002;ikan,terigu;310.0;0.0;280.0;0.5
+194;Grilled Chicken American Style;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+195;Ayam Panggang Bumbu Bali;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+196;Tim Ayam Hainan;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V002;ayam;155.0;0.0;220.0;0.5
+197;Chicken Kiev;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+198;Ayam Bakar Taliwang;Diet Makanan Biasa;217.0;20.0;15.0;0.5;lauk_utama;V001;ayam;325.0;0.0;220.0;0.5
+199;Ayam Szechuan;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+200;Chicken Barbeque Sauce;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+201;Ayam Tuturuga;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+202;Daging Cabe Ijo;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V002;daging_sapi,daging;65.0;0.0;330.0;0.5
+203;Ikan Saus Oriental;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V003;ikan;60.0;0.0;280.0;0.5
+204;Chicken Cordon Bleu;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;15.0;0.0;100.0;0.5
+205;Ikan Dabu-Dabu;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V002;ikan;60.0;0.0;280.0;0.5
+206;Opor Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+207;Ikan Saus Tiram;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;ikan;60.0;0.0;280.0;0.5
+208;Fish Roll;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;ikan;15.0;0.0;100.0;0.5
+209;Rendang Daging;Diet Makanan Biasa;252.0;22.0;18.0;0.5;lauk_utama;V003;daging_sapi,daging;465.0;0.0;330.0;0.5
+210;Chicken Mongolian;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;15.0;0.0;100.0;0.5
+211;Ikan Masak Wijen;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V002;ikan;60.0;0.0;280.0;0.5
+212;Style Grilled Chicken Kabobs;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+213;Semur Ayam;Diet Makanan Biasa;237.0;20.0;15.0;5.5;lauk_utama;V001;ayam;475.0;0.0;220.0;0.5
+214;Fish Steak w/ Cream Sauce;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;daging_sapi,daging,ikan,susu;15.0;0.0;100.0;0.5
+215;Ikan Gulung Bumbu Balado;Diet Makanan Biasa;173.0;18.0;11.0;0.5;lauk_utama;V003;ikan;310.0;0.0;280.0;0.5
+216;Se'i Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+217;Ikan Gulung Asam Manis;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V002;ikan;60.0;0.0;280.0;0.5
+218;Grilled Chicken Oregano;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+219;Daging Gulung Saus Kecap;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V001;daging_sapi,daging,kedelai;65.0;0.0;330.0;0.5
+220;Tim Ayam Jahe;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V002;ayam;155.0;0.0;220.0;0.5
+221;Chicken Steak Mushroom Sauce;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam,daging_sapi,daging;15.0;0.0;100.0;0.5
+222;Ikan Panggang Oriental;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V001;ikan;60.0;0.0;280.0;0.5
+223;Ayam Krispi Saus Teriyaki;Diet Makanan Biasa;237.0;20.0;15.0;5.5;lauk_utama;V002;ayam;75.0;0.0;220.0;0.5
+224;Chicken Piccata w/ Milanese Sauce;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;15.0;0.0;100.0;0.5
+225;Daging Bumbu Rujak;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V001;daging_sapi,daging;65.0;0.0;330.0;0.5
+226;Baked Chicken Cheese;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V002;ayam,susu;15.0;0.0;100.0;0.5
+227;Samosa Isi Ayam;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+228;Samosa Isi Ayam Panggang;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V001;ayam;75.0;0.0;220.0;0.5
+229;Steak-Ikan-Oriental;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V002;daging_sapi,daging,ikan;60.0;0.0;280.0;0.5
+230;Ayam-Bakar-Cianjur;Diet Makanan Biasa;217.0;20.0;15.0;0.5;lauk_utama;V003;ayam;325.0;0.0;220.0;0.5
+231;Asian Beef Roll;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;daging_sapi,daging;15.0;0.0;100.0;0.5
+232;Beef Bulgogi;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;daging_sapi,daging;15.0;0.0;100.0;0.5
+233;Ayam Hainan;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam;75.0;0.0;220.0;0.5
+234;Ayam Goreng Mentega;Diet Makanan Biasa;217.0;20.0;15.0;0.5;lauk_utama;V001;ayam,susu;325.0;0.0;220.0;0.5
+235;Chicken Teriyaki;Diet Makanan Biasa;237.0;20.0;15.0;5.5;lauk_utama;V002;ayam;15.0;0.0;100.0;0.5
+236;Empal Daging;Diet Makanan Biasa;198.0;22.0;12.0;0.5;lauk_utama;V003;daging_sapi,daging;65.0;0.0;330.0;0.5
+237;Omelette;Diet Makanan Biasa;97.0;8.0;5.0;5.0;lauk_nabati;V001;telur;15.0;0.0;100.0;0.5
+238;Telur Rebus;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V002;telur;45.0;0.0;100.0;0.5
+239;Telur Dadar;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V003;telur;15.0;0.0;100.0;0.5
+240;Telur Ceplok;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V001;telur;15.0;0.0;100.0;0.5
+241;Telur Orak Arik;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V002;telur;15.0;0.0;100.0;0.5
+242;Telur Sembunyi;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V003;telur;15.0;0.0;100.0;0.5
+243;Tim Tahu Isi;Diet Lunak;65.0;7.0;3.0;2.5;lauk_nabati;V001;kedelai;7.0;0.0;120.0;0.8
+244;Sup Tahu China;Diet Lunak;65.0;7.0;3.0;2.5;lauk_nabati;V002;kedelai;7.0;0.0;120.0;0.8
+245;Cah Tahu;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kedelai;215.0;1.5;180.0;1.8
+246;Cah Tahu;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;kedelai;215.0;1.5;180.0;1.8
+247;Cah Tahu;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;kedelai;215.0;1.5;180.0;1.8
+248;Cah Tempe Seledri;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kedelai;215.0;1.5;180.0;1.8
+249;Tahu Cabe Ijo;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V001;kedelai;7.0;0.0;120.0;0.8
+250;Terik Tempe;Diet Makanan Biasa;126.0;10.0;6.0;8.0;lauk_nabati;V002;kedelai;9.0;0.0;230.0;1.4
+251;Tahu Teriyaki;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V003;kedelai;7.0;0.0;120.0;0.8
+252;Orek Tempe;Diet Makanan Biasa;126.0;10.0;6.0;8.0;lauk_nabati;V001;kedelai;9.0;0.0;230.0;1.4
+253;Telur Puyuh Saus Tiram;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V002;telur;15.0;0.0;100.0;0.5
+254;Cah Tahu Kucai;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kedelai;215.0;1.5;180.0;1.8
+255;Burger Tahu Panggang;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;daging_sapi,daging,kedelai;15.0;0.0;100.0;0.5
+256;Sup Wortel Tahu Sutra;Diet Lunak;42.8;1.0;1.2;7.0;sayur;V002;kedelai,wortel;165.0;0.0;320.0;2.8
+257;Tahu Bandung;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V003;kedelai;7.0;0.0;120.0;0.8
+258;Burger Tempe;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;daging_sapi,daging,kedelai;15.0;0.0;100.0;0.5
+259;Mini Omelette;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V002;telur;15.0;0.0;100.0;0.5
+260;Cah Tahu Jamur;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kedelai;215.0;1.5;180.0;1.8
+261;Telur Opor;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V001;telur;15.0;0.0;100.0;0.5
+262;Tahu Aromatik;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V002;kedelai;7.0;0.0;120.0;0.8
+263;Sup Jagung Sisir Telur;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V003;telur;15.0;0.0;100.0;0.5
+264;Angsio Tahu;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V001;kedelai;7.0;0.0;120.0;0.8
+265;Rollade Tahu;Diet Lunak;65.0;7.0;3.0;2.5;lauk_nabati;V002;kedelai;7.0;0.0;120.0;0.8
+266;Bacem Tempe;Diet Makanan Biasa;178.0;10.0;10.0;12.0;lauk_nabati;V003;kedelai;189.0;5.0;230.0;1.4
+267;Tempe Cabe Ijo;Diet Makanan Biasa;126.0;10.0;6.0;8.0;lauk_nabati;V001;kedelai;9.0;0.0;230.0;1.4
+268;Pindang Telur;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V002;telur;15.0;0.0;100.0;0.5
+269;Scrambled Cheese Egg;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V003;telur,susu;15.0;0.0;100.0;0.5
+270;Oseng Tempe;Diet Makanan Biasa;126.0;10.0;6.0;8.0;lauk_nabati;V001;kedelai;9.0;0.0;230.0;1.4
+271;Sup Tahu Sayuran;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V002;kedelai;165.0;0.0;180.0;1.8
+272;Bacem Tahu;Diet Makanan Biasa;126.0;7.0;8.0;6.5;lauk_nabati;V003;kedelai;187.0;5.0;120.0;0.8
+273;Sup Telur Puyuh Wortel;Diet Lunak;42.8;1.0;1.2;7.0;sayur;V001;telur,wortel;165.0;0.0;320.0;2.8
+274;Telur Dadar Padang;Diet Makanan Biasa;97.0;8.0;5.0;5.0;lauk_nabati;V002;telur;15.0;0.0;100.0;0.5
+275;Cah Tahu Tauco;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kedelai;215.0;1.5;180.0;1.8
+276;Tahu Bumbu Tomat;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V001;kedelai;7.0;0.0;120.0;0.8
+277;Semur Tempe;Diet Makanan Biasa;178.0;10.0;10.0;12.0;lauk_nabati;V002;kedelai;189.0;5.0;230.0;1.4
+278;Sup Labu Siam Telur;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V003;telur;165.0;0.0;180.0;1.8
+279;Cah Tahu Saus Tiram;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;kedelai;215.0;1.5;180.0;1.8
+280;Sayur Tempe;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;kedelai;55.0;0.0;180.0;1.8
+281;Terik Tahu;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V003;kedelai;7.0;0.0;120.0;0.8
+282;Telur Asin;Diet Makanan Biasa;97.0;8.0;5.0;5.0;lauk_nabati;V001;telur;15.0;0.0;100.0;0.5
+283;Tempe Mendoan;Diet Makanan Biasa;126.0;10.0;6.0;8.0;lauk_nabati;V002;kedelai;9.0;0.0;230.0;1.4
+284;Cah Tempe;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kedelai;215.0;1.5;180.0;1.8
+285;Cah Tahu Kapri;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;kedelai;215.0;1.5;180.0;1.8
+286;Martabak Telur;Diet Makanan Biasa;97.0;8.0;5.0;5.0;lauk_nabati;V002;telur;15.0;0.0;100.0;0.5
+287;Pangsit Tahu Kuah;Diet Lunak;65.0;7.0;3.0;2.5;lauk_nabati;V003;kedelai;7.0;0.0;120.0;0.8
+288;Tempe Bumbu Tomat;Diet Makanan Biasa;126.0;10.0;6.0;8.0;lauk_nabati;V001;kedelai;9.0;0.0;230.0;1.4
+289;Loaf Tahu;Diet Lunak;65.0;7.0;3.0;2.5;lauk_nabati;V002;kedelai;7.0;0.0;120.0;0.8
+290;Mapo Tahu;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V003;kedelai;7.0;0.0;120.0;0.8
+291;Tamagoyaki;Diet Lunak;79.0;8.0;3.0;5.0;lauk_nabati;V001;umum;15.0;0.0;100.0;0.5
+292;Tim Tahu Kuning;Diet Lunak;65.0;7.0;3.0;2.5;lauk_nabati;V002;kedelai;7.0;0.0;120.0;0.8
+293;Tahu Kukus Sayuran;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;kedelai;55.0;0.0;180.0;1.8
+294;Pangsit Tahu Asam Manis;Diet Makanan Biasa;74.0;7.0;4.0;2.5;lauk_nabati;V001;kedelai;7.0;0.0;120.0;0.8
+295;Cah Tempe Bawang Putih;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;kedelai;215.0;1.5;180.0;1.8
+296;Burger Tahu Asam Manis;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V003;daging_sapi,daging,kedelai;15.0;0.0;100.0;0.5
+297;Egg Roll;Diet Makanan Biasa;97.0;8.0;5.0;5.0;lauk_nabati;V001;telur;15.0;0.0;100.0;0.5
+298;Sup Kembang Tahu Wortel;Diet Lunak;42.8;1.0;1.2;7.0;sayur;V002;kedelai,wortel;165.0;0.0;320.0;2.8
+299;Cah Tahu Bawang Putih;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kedelai;215.0;1.5;180.0;1.8
+300;Jus Pisang;Diet Cair;117.7;1.2;0.1;28.0;dessert;V001;pisang;1.0;12.0;358.0;2.6
+301;Jus Semangka;Diet Cair;36.1;0.8;0.1;8.0;dessert;V002;semangka;1.0;6.0;112.0;0.4
+302;Jus Pepaya;Diet Cair;64.1;0.8;0.1;15.0;dessert;V003;pepaya;1.0;8.0;182.0;1.8
+303;Jus Melon;Diet Cair;44.1;0.8;0.1;10.0;dessert;V001;melon;1.0;8.0;228.0;0.9
+304;Jus Pir;Diet Cair;64.1;0.8;0.1;15.0;dessert;V002;pir;1.0;10.0;116.0;2.4
+305;Jus Apel Fuji;Diet Cair;64.1;0.8;0.1;15.0;dessert;V003;apel;1.0;10.0;116.0;2.4
+306;Jus Jeruk;Diet Cair;64.1;0.8;0.1;15.0;dessert;V001;jeruk;1.0;9.0;181.0;1.8
+307;Milk;Diet Cair;166.0;3.0;6.0;25.0;dessert;V002;susu;60.0;15.0;90.0;0.5
+308;Low Fat Milk;Diet Cair;166.0;3.0;6.0;25.0;dessert;V003;susu;60.0;15.0;90.0;0.5
+309;Tea;Diet Cair;166.0;3.0;6.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+310;Puding Susu;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V002;susu;45.0;14.0;90.0;0.5
+311;Puding Susu Coklat;Diet Lunak;151.0;3.0;3.0;28.0;dessert;V003;susu;45.0;14.0;90.0;0.5
+312;Dummy Juice;Diet Cair;166.0;3.0;6.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+313;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+314;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+315;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+316;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+317;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+318;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+319;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+320;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+321;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+322;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+323;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+324;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+325;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+326;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+327;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+328;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+329;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+330;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+331;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+332;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+333;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+334;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+335;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+336;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+337;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+338;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+339;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+340;Bubur Ayam;Diet Lunak;267.0;15.0;3.0;45.0;pokok;V002;ayam;350.0;0.0;20.0;0.3
+341;Bubur Ayam;Diet Makanan Biasa;294.0;15.0;6.0;45.0;pokok;V003;ayam;350.0;0.0;20.0;0.3
+342;Bubur Ayam;Diet Makanan Biasa;294.0;15.0;6.0;45.0;pokok;V001;ayam;350.0;0.0;20.0;0.3
+343;Bubur Sumsum;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;umum;60.0;15.0;90.0;0.5
+344;Nasi Tim;Diet Lunak;242.5;4.5;0.5;55.0;pokok;V003;umum;2.0;0.1;29.0;0.4
+345;Bubur;Diet Lunak;124.7;2.5;0.3;28.0;pokok;V001;umum;1.5;0.0;20.0;0.3
+346;Nasi Tim Ayam;Diet Lunak;242.5;4.5;0.5;55.0;pokok;V002;ayam;2.0;0.1;29.0;0.4
+347;Nasi Uduk;Diet Makanan Biasa;276.0;5.0;4.0;55.0;pokok;V003;umum;120.0;0.1;29.0;0.4
+348;Yeung Chow Fried Rice;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V001;umum;15.0;0.0;100.0;0.5
+349;Bubur Manado;Diet Lunak;124.7;2.5;0.3;28.0;pokok;V002;umum;1.5;0.0;20.0;0.3
+350;Pilaf Rice;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;umum;15.0;0.0;100.0;0.5
+351;Nasi Hainan;Diet Makanan Biasa;242.5;4.5;0.5;55.0;pokok;V001;umum;2.0;0.1;29.0;0.4
+352;Bubur Kacang Hijau;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;kacang;60.0;15.0;90.0;0.5
+353;Bubur Sumsum Pandan;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+354;Bubur Mutiara;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V001;umum;60.0;15.0;90.0;0.5
+355;Bubur Mutiara (DM);Diet DM;136.0;3.0;6.0;17.5;dessert;V002;umum;60.0;1.5;90.0;0.5
+356;Nasi Timbel;Diet Makanan Biasa;242.5;4.5;0.5;55.0;pokok;V003;umum;2.0;0.1;29.0;0.4
+357;Nasi Tim Timbel;Diet Lunak;242.5;4.5;0.5;55.0;pokok;V001;umum;2.0;0.1;29.0;0.4
+358;Tumis Buncis Jagung Manis;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;sayur;215.0;1.5;180.0;1.8
+359;Cah Wortel Jamur;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V003;wortel;215.0;1.5;320.0;2.8
+360;Mixed Green Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+361;Cream of Carrot Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;susu;55.0;0.0;180.0;1.8
+362;Tumis Timun Jepang Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V003;wortel;215.0;1.5;320.0;2.8
+363;Sup Jamur Kuping;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V001;umum;165.0;0.0;180.0;1.8
+364;Cah Tofu;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;kedelai;215.0;1.5;180.0;1.8
+365;Cah Wortel Jagung Semi;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V003;wortel;215.0;1.5;320.0;2.8
+366;Garden Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+367;Three Kind of Vegetables;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+368;Sup Bayam Labu Siam;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V003;ayam,bayam;155.0;0.0;220.0;0.5
+369;Cah Oyong Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V001;wortel;215.0;1.5;320.0;2.8
+370;Sup Sayuran;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V002;sayur;165.0;0.0;180.0;1.8
+371;Cah Jagung Semi;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;sayur;215.0;1.5;180.0;1.8
+372;Wilted Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+373;Carrot Timbale;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;umum;55.0;0.0;180.0;1.8
+374;Orak-Arik Sayuran;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+375;Capcay Cah;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+376;Composed Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+377;Sauteed Butter Potatoes;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;susu;15.0;0.0;100.0;0.5
+378;Bouquetiere of Vegetables;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+379;Macaroni Schotel;Diet Lunak;141.0;3.0;1.0;30.0;pokok;V002;terigu;15.0;0.0;100.0;0.5
+380;Sup Sosis Sayuran;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V003;sayur;165.0;0.0;180.0;1.8
+381;Tumis Tauge Daun Bawang;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+382;Cah Pokcoy;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;sayur;215.0;1.5;180.0;1.8
+383;Cah Tauge Daun Bawang;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;sayur;215.0;1.5;180.0;1.8
+384;Macaroni Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;terigu;55.0;0.0;180.0;1.8
+385;Buttered Zucchini Carrot;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;susu;55.0;0.0;180.0;1.8
+386;Tumis Bayam Jamur;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam,bayam;75.0;0.0;220.0;0.5
+387;Cah Buncis Bakso;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;daging_sapi,daging;15.0;0.0;100.0;0.5
+388;Fresh Fruits Salad;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+389;Spinach Timbale;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;umum;55.0;0.0;180.0;1.8
+390;Sayur Asem;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+391;Cah Labu Siam;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;sayur;215.0;1.5;180.0;1.8
+392;Cah Zucchini;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;sayur;215.0;1.5;180.0;1.8
+393;Mexican Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+394;Braised White Cabbage Carrot;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;umum;55.0;0.0;180.0;1.8
+395;Braised White Carrot;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;umum;55.0;0.0;180.0;1.8
+396;Tumis Timun Jepang;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+397;Cah Kangkung;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;sayur;215.0;1.5;180.0;1.8
+398;Cah Timun Jepang;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;sayur;215.0;1.5;180.0;1.8
+399;Vegetable Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+400;Sauteed Broccoli Mushroom;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;umum;55.0;0.0;180.0;1.8
+401;Sauteed Kyuri;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;umum;55.0;0.0;180.0;1.8
+402;Tumis Kacang Panjang Tauge;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;kacang;215.0;1.5;180.0;1.8
+403;Russian Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+404;Julienne Vegetables;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+405;Bening Bayam Jagung Manis;Diet Lunak;109.0;20.0;3.0;0.5;lauk_utama;V001;ayam,bayam;75.0;0.0;220.0;0.5
+406;Tumis Sayuran;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;sayur;215.0;1.5;180.0;1.8
+407;Cah Kapri;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;sayur;215.0;1.5;180.0;1.8
+408;Cah Sayuran;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+409;Italian Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+410;Sauteed Macaroni;Diet Makanan Biasa;141.0;3.0;1.0;30.0;pokok;V003;terigu;15.0;0.0;100.0;0.5
+411;Sauteed Long Beans;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;umum;55.0;0.0;180.0;1.8
+412;Cah Brokoli;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;sayur;215.0;1.5;180.0;1.8
+413;Chef Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+414;Oseng Buncis Bakso;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V001;daging_sapi,daging;15.0;0.0;100.0;0.5
+415;Cah Caysim Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V002;wortel;215.0;1.5;320.0;2.8
+416;Nicoise Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+417;Sauteed Green Beans;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;umum;55.0;0.0;180.0;1.8
+418;Ikan Acar Kuning;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V002;ikan;60.0;0.0;280.0;0.5
+419;Tumis Wortel Daun Bawang;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V003;wortel;215.0;1.5;320.0;2.8
+420;Cah Baby Pokcoy;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+421;Green Salad w/ Italian Dressing;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+422;Vegetable Vichyssoise Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+423;Stir Fried Fresh Young Vegetables;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+424;Ikan Cah Jahe;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V002;ikan;60.0;0.0;280.0;0.5
+425;Cah Baby Buncis;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;sayur;215.0;1.5;180.0;1.8
+426;Curry Chicken Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;ayam;55.0;0.0;180.0;1.8
+427;Ketupat Sayur;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+428;Tumis Tauge Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V003;wortel;215.0;1.5;320.0;2.8
+429;Cah Tauge Bangkok;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+430;Fruit Cocktail Salad;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V002;sayur;60.0;15.0;90.0;0.5
+431;Vichy Carrots;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;umum;55.0;0.0;180.0;1.8
+432;Acar Kuning Sayuran;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+433;Cah Kailan Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V002;wortel;215.0;1.5;320.0;2.8
+434;Cah Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V003;wortel;215.0;1.5;320.0;2.8
+435;Cauliflower a la Grecque;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;umum;55.0;0.0;180.0;1.8
+436;Buttered Mix Vegetables;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;susu;55.0;0.0;180.0;1.8
+437;Cah Kacang Panjang;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V003;kacang;215.0;1.5;180.0;1.8
+438;Cah Timun Jagung;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+439;Mediterranean Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+440;Clear Vegetable Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+441;Jardiniere of Vegetables;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+442;Cah Labu Siam Jagung Manis;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V002;sayur;215.0;1.5;180.0;1.8
+443;Ikan Cah Jamur;Diet Makanan Biasa;119.0;18.0;5.0;0.5;lauk_utama;V003;ikan;60.0;0.0;280.0;0.5
+444;Cah Oyong Daun Bawang;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+445;Coleslaw;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;umum;55.0;0.0;180.0;1.8
+446;Sauteed Green Beans Sweet Corn;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;umum;55.0;0.0;180.0;1.8
+447;Tumis Jagung Muda;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+448;Cah Labu Air;Diet Makanan Biasa;166.0;3.0;6.0;25.0;dessert;V002;sayur;60.0;15.0;90.0;0.5
+449;Chicken Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;ayam;55.0;0.0;180.0;1.8
+450;Buttered Kyuri Carrot;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;susu;55.0;0.0;180.0;1.8
+451;Oseng Buncis Wortel;Diet Makanan Biasa;33.8;1.0;0.2;7.0;sayur;V002;wortel;55.0;0.0;320.0;2.8
+452;Cah Bayam Jamur;Diet Makanan Biasa;163.0;20.0;9.0;0.5;lauk_utama;V003;ayam,bayam;75.0;0.0;220.0;0.5
+453;Ensalada Sevillana;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+454;Chicken Vegetable Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;ayam;55.0;0.0;180.0;1.8
+455;Macedoine of Vegetables;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+456;Sayur Lodeh;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+457;Lodeh Bening;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;umum;55.0;0.0;180.0;1.8
+458;Cah Kembang Kol Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V003;wortel;215.0;1.5;320.0;2.8
+459;Cah Labu Siam Wortel;Diet Makanan Biasa;66.8;1.0;3.2;8.5;sayur;V001;wortel;215.0;1.5;320.0;2.8
+460;Huzarensalade;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+461;Sauteed Baby Corn;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;umum;55.0;0.0;180.0;1.8
+462;Tumis Kangkung;Diet Makanan Biasa;60.8;1.5;3.2;6.5;sayur;V001;sayur;215.0;1.5;180.0;1.8
+463;Beef Sauteed Onion;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;daging_sapi,daging;15.0;0.0;100.0;0.5
+464;Green Vegetable Salad;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+465;Roti Isi Sayur;Diet Makanan Biasa;27.8;1.5;0.2;5.0;sayur;V001;terigu;55.0;0.0;180.0;1.8
+466;Beef Stuffed Spinach;Diet Makanan Biasa;148.0;18.0;8.0;1.0;lauk_utama;V002;daging_sapi,daging;15.0;0.0;100.0;0.5
+467;Sup Makaroni Sayuran;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V003;sayur;165.0;0.0;180.0;1.8
+468;Sup Bakso Sayuran;Diet Lunak;103.0;18.0;3.0;1.0;lauk_utama;V001;daging_sapi,daging;95.0;0.0;100.0;0.5
+469;Chicken Cream Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;ayam,susu;55.0;0.0;180.0;1.8
+470;Sup Vermicelli Wortel;Diet Lunak;42.8;1.0;1.2;7.0;sayur;V003;wortel;165.0;0.0;320.0;2.8
+471;Sup Panca Selera;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V001;umum;165.0;0.0;180.0;1.8
+472;Meat Ball Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+473;Italian Minestrone Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+474;Sup Jagung Mutiara;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V001;umum;165.0;0.0;180.0;1.8
+475;Sup Adobo;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V002;umum;165.0;0.0;180.0;1.8
+476;Potage Garbure;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;umum;55.0;0.0;180.0;1.8
+477;Miso Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+478;Hot Vichyssoise Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+479;Hungarian Goulash Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;sayur;55.0;0.0;180.0;1.8
+480;Sup Szechuan;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V001;umum;165.0;0.0;180.0;1.8
+481;Potato & Leek Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+482;Sup Kimlo Solo;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V003;umum;165.0;0.0;180.0;1.8
+483;Tomato Basil Soup;Diet Lunak;21.8;1.0;0.2;4.0;sayur;V001;sayur;55.0;0.0;230.0;1.2
+484;Cream of Mushroom Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;susu;55.0;0.0;180.0;1.8
+485;Sup Kacang Merah Wortel;Diet Lunak;42.8;1.0;1.2;7.0;sayur;V003;kacang,wortel;165.0;0.0;320.0;2.8
+486;Red Bean Clear Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+487;Pasta Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;terigu;55.0;0.0;180.0;1.8
+488;Sup Wortel Jagung Manis;Diet Lunak;42.8;1.0;1.2;7.0;sayur;V003;wortel;165.0;0.0;320.0;2.8
+489;Sup Merah Delima;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V001;umum;165.0;0.0;180.0;1.8
+490;French Onion Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;sayur;55.0;0.0;180.0;1.8
+491;Old Fashioned Fish Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;ikan;55.0;0.0;180.0;1.8
+492;Wonton Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V001;sayur;55.0;0.0;180.0;1.8
+493;Mulligatawny Soup;Diet Lunak;103.0;18.0;3.0;1.0;lauk_utama;V002;sayur;15.0;0.0;100.0;0.5
+494;Cream of Corn Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;susu;55.0;0.0;180.0;1.8
+495;Pumpkin Cream Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V001;susu;55.0;0.0;180.0;1.8
+496;Red Bean Cream Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V002;susu;55.0;0.0;180.0;1.8
+497;Chicken-Cream-Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;ayam,susu;55.0;0.0;180.0;1.8
+498;Sup Oyong Wortel;Diet Lunak;42.8;1.0;1.2;7.0;sayur;V001;wortel;165.0;0.0;320.0;2.8
+499;Sup Labu Siam Bakso;Diet Lunak;103.0;18.0;3.0;1.0;lauk_utama;V002;daging_sapi,daging;95.0;0.0;100.0;0.5
+500;Sup Labu Air Daun Bawang;Diet Lunak;139.0;3.0;3.0;25.0;dessert;V003;umum;60.0;15.0;90.0;0.5
+501;Sup Tekwan;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V001;umum;165.0;0.0;180.0;1.8
+502;Sup Tim Merah;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V002;umum;165.0;0.0;180.0;1.8
+503;Sup Bakso Ikan;Diet Lunak;101.0;18.0;3.0;0.5;lauk_utama;V003;daging_sapi,daging,ikan;140.0;0.0;280.0;0.5
+504;Sup Panca Warna;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V001;umum;165.0;0.0;180.0;1.8
+505;Sup Oyong Soun;Diet Lunak;36.8;1.5;1.2;5.0;sayur;V002;umum;165.0;0.0;180.0;1.8
+506;Cream Soup;Diet Lunak;27.8;1.5;0.2;5.0;sayur;V003;susu;55.0;0.0;180.0;1.8

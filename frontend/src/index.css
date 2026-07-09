@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased min-h-screen selection:bg-sky-500 selection:text-white;
+  }
+}
+
+/* Glassmorphism Classes - Light Theme */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 104, 55, 0.08);
+}
+
+.glass-panel-heavy {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 104, 55, 0.12);
+  box-shadow: 0 10px 30px -5px rgba(0, 104, 55, 0.05);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 104, 55, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(78, 191, 59, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 104, 55, 0.05), 0 8px 10px -6px rgba(0, 104, 55, 0.05);
+}
+
+/* Neon Gradient Text & Backgrounds */
+.text-gradient-sky {
+  background-image: linear-gradient(to right, #92D050, #4EBF3B, #006837);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-emerald {
+  background-image: linear-gradient(to right, #92D050, #009245);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-radial {
+  background-image: radial-gradient(circle at top, rgba(78, 191, 59, 0.12) 0%, transparent 70%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(78, 191, 59, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(78, 191, 59, 0.5);
+}
+
+/* Micro Animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
+
+/* Typography and utility overrides for Light Theme */
+.text-white {
+  color: #0f172a !important; /* Invert white titles to dark slate */
+}
+
+/* Maintain actual white text inside colored components like buttons and alert tags */
+button.text-white,
+a.text-white,
+.bg-gradient-to-r.text-white,
+.bg-gradient-to-r *.text-white,
+button.bg-gradient-to-r,
+button.bg-gradient-to-r *,
+.bg-gdsk-forest,
+.bg-gdsk-forest *,
+.bg-gdsk-middle,
+.bg-gdsk-middle *,
+.bg-gdsk-leaf,
+.bg-gdsk-leaf *,
+.bg-rose-950 *,
+.bg-emerald-950 *,
+.bg-emerald-600 *,
+.bg-rose-600 *,
+.bg-rose-500 *,
+.bg-emerald-500 * {
+  color: #ffffff !important;
+}
+
+/* Form Controls Styling for Light Theme */
+input, select, textarea {
+  color: #0f172a !important; /* Dark text */
+  background-color: #ffffff !important; /* White bg */
+  border: 1px solid rgba(0, 104, 55, 0.15) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #94a3b8 !important; /* Slate 400 */
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #4EBF3B !important; /* Leaf Green */
+  box-shadow: 0 0 0 2px rgba(78, 191, 59, 0.15) !important;
+  outline: none !important;
+}
+
+/* Premium Light Theme Toast Overrides */
+.bg-rose-950\/80 {
+  background-color: rgba(254, 242, 242, 0.95) !important; /* Rose 50 */
+  border-color: rgba(244, 63, 94, 0.25) !important; /* Rose 500 */
+}
+.bg-rose-950\/80 span, .bg-rose-950\/80 div {
+  color: #9f1239 !important; /* Rose 800 */
+}
+
+.bg-emerald-950\/80 {
+  background-color: rgba(240, 253, 250, 0.95) !important; /* Emerald 50 */
+  border-color: rgba(16, 185, 129, 0.25) !important; /* Emerald 500 */
+}
+.bg-emerald-950\/80 span, .bg-emerald-950\/80 div {
+  color: #065f46 !important; /* Emerald 800 */
+}
+
+/* Core Background and Text Overrides for Light Theme */
+body, 
+.bg-slate-950,
+#root, 
+.min-h-screen {
+  background-color: #f8fafc !important; /* Soft premium off-white background */
+  color: #1e293b !important; /* Dark slate primary text */
+}
+
+/* Card Panel Backgrounds */
+.glass-panel-heavy,
+.glass-panel,
+.bg-slate-900,
+.bg-slate-900\/40,
+.bg-slate-900\/60,
+.bg-slate-900\/30 {
+  background-color: #ffffff !important; /* Pure white surface */
+  color: #1e293b !important;
+}
+
+.glass-card,
+.bg-slate-800,
+.bg-slate-800\/80 {
+  background-color: #f1f5f9 !important; /* Soft slate surface */
+  color: #1e293b !important;
+}
+
+/* Borders */
+.border-slate-800,
+.border-slate-800\/80,
+.border-slate-700,
+.border-slate-600,
+.divide-slate-800,
+.divide-slate-800\/60 {
+  border-color: #e2e8f0 !important; /* Soft grey borders */
+}
+
+/* Typography and Text Colors */
+.text-slate-100,
+.text-slate-200,
+.text-slate-300 {
+  color: #0f172a !important; /* Dark slate 900 */
+}
+
+.text-slate-400,
+.text-slate-500 {
+  color: #64748b !important; /* Muted grey slate 500 */
+}
+
+/* Hover States */
+.glass-card:hover,
+.hover\:bg-slate-800:hover {
+  background-color: #e2e8f0 !important; /* Slate 200 hover bg */
+  border-color: rgba(78, 191, 59, 0.45) !important; /* GDSK leaf border accent on hover */
+}
+
+/* Gradient Buttons Light Theme Overrides */
+.bg-gradient-to-r.from-gdsk-forest.to-gdsk-leaf,
+button.bg-gradient-to-r,
+.bg-gradient-to-r {
+  background-image: linear-gradient(135deg, #006837 0%, #4EBF3B 100%) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Ensure children elements inside green buttons also stay white */
+.bg-gradient-to-r.from-gdsk-forest.to-gdsk-leaf *,
+button.bg-gradient-to-r *,
+.bg-gradient-to-r * {
+  color: #ffffff !important;
+}
+
+/* Contrast adjustments for GDSK themed text (prevent light-green/soft-lime text clashing with light background) */
+.text-gdsk-soft {
+  color: #006837 !important; /* Force to Forest Green (dark green) for readability */
+}
+
+.text-gdsk-leaf {
+  color: #009245 !important; /* Force to Middle Green for readability */
+}
+
+/* Safari vendor prefixes for Tailwind backdrop-blur classes */
+.backdrop-blur-sm {
+  -webkit-backdrop-filter: blur(4px) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.backdrop-blur-md {
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.backdrop-blur-lg {
+  -webkit-backdrop-filter: blur(24px) !important;
+  backdrop-filter: blur(24px) !important;
+}
+
+
+

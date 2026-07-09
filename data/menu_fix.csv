@@ -1,0 +1,508 @@
+﻿No.;Nama Menu;Tipe Diet/Deskripsi;Kalori;Protein_g;Lemak_g;Karbohidrat_g;Kategori
+15;Buah Pisang;Diet Lunak;120;1,5;0,5;27;Buah
+16;Buah Pepaya;Diet Lunak;60;0,8;0,2;15;Buah
+17;Buah Semangka;Diet Lunak;50;1;0;12;Buah
+18;Buah Melon;Diet Lunak;60;1;0;15;Buah
+19;Buah Pir;Diet Lunak;85;0,5;0;21;Buah
+20;Buah Apel Fuji;Diet Lunak;95;0,5;0;23;Buah
+21;Buah Jeruk;Diet Lunak;90;1;0;22;Buah
+105;Anggur;Diet Lunak;110;1;0,5;28;Buah
+453;Pisang Kepok Kukus;Diet Lunak;135;2;1;30;Buah
+54;Puding Buah Naga;Diet Lunak;160;3;4;28;Camilan/Dessert
+71;Puding Fruit Cocktail;Diet Lunak;170;3;5;30;Camilan/Dessert
+89;Puding Panna Cotta Chocolate;Diet Lunak;220;4;10;28;Camilan/Dessert
+106;Puding Guava;Diet Lunak;160;3;4;30;Camilan/Dessert
+142;Puding Mocca;Diet Lunak;200;4;8;30;Camilan/Dessert
+161;Puding Mangga;Diet Lunak;180;3;5;32;Camilan/Dessert
+178;Puding Leci;Diet Lunak;170;3;4;30;Camilan/Dessert
+194;Puding Layer;Diet Lunak;200;4;8;32;Camilan/Dessert
+213;Puding Caramel;Diet Lunak;190;4;7;30;Camilan/Dessert
+229;Puding Mousse Chocolate;Diet Lunak;210;4;9;28;Camilan/Dessert
+245;Puding Panna Cotta Strawberry;Diet Lunak;200;4;8;30;Camilan/Dessert
+277;Puding Pandan;Diet Lunak;190;4;6;32;Camilan/Dessert
+294;Puding Selasih;Diet Lunak;170;3;4;32;Camilan/Dessert
+308;Puding Mousse Strawberry;Diet Lunak;210;4;9;30;Camilan/Dessert
+326;Puding Melon;Diet Lunak;175;3;4;32;Camilan/Dessert
+339;Puding Lumut;Diet Lunak;180;4;6;32;Camilan/Dessert
+383;Puding Strawberry;Diet Lunak;190;4;7;30;Camilan/Dessert
+399;Puding Vanilla;Diet Lunak;190;4;7;30;Camilan/Dessert
+404;Brownies Kukus;Diet Lunak;180;3;8;25;Camilan/Dessert
+407;Donat Meisis;Diet Makanan Biasa (Biasa);220;4;10;28;Camilan/Dessert
+408;Roti Ayam;Diet Makanan Biasa (Biasa);250;12;10;28;Camilan/Dessert
+411;Fruit Pie;Diet Lunak;220;3;9;32;Camilan/Dessert
+412;Fruit Pie DM;Diet DM (Diabetes);180;3;7;30;Camilan/Dessert
+416;Roti Isi Daging;Diet Makanan Biasa (Biasa);220;10;10;25;Camilan/Dessert
+418;Risol Sayur Ayam;Diet Makanan Biasa (Biasa);200;8;10;22;Camilan/Dessert
+419;Risol Sayur Ayam Panggang;Diet Makanan Biasa (Biasa);190;8;9;20;Camilan/Dessert
+420;Risol Ayam Panggang;Diet Makanan Biasa (Biasa);190;9;9;20;Camilan/Dessert
+424;Nagasari;Diet Lunak;160;3;4;30;Camilan/Dessert
+425;Nagasari (DM);Diet DM (Diabetes);140;3;3;28;Camilan/Dessert
+426;Nagasari #Santan;Diet Lunak;190;3;8;32;Camilan/Dessert
+428;Roti Isi Abon;Diet Makanan Biasa (Biasa);210;8;9;26;Camilan/Dessert
+432;Talam Santan #Santan;Diet Lunak;190;3;8;32;Camilan/Dessert
+434;Roti Isi Ayam;Diet Makanan Biasa (Biasa);220;10;9;25;Camilan/Dessert
+443;Pastel Sayur dan Ayam Panggang;Diet Makanan Biasa (Biasa);210;9;10;22;Camilan/Dessert
+444;Pastel Ayam Panggang;Diet Makanan Biasa (Biasa);200;10;9;20;Camilan/Dessert
+447;Talam Hijau #Santan;Diet Lunak;180;3;7;30;Camilan/Dessert
+448;Talam;Diet Lunak;175;3;6;30;Camilan/Dessert
+450;Roti Isi Sosis;Diet Makanan Biasa (Biasa);210;8;10;24;Camilan/Dessert
+452;Kue Lumpur Kentang;Diet Lunak;190;4;8;25;Camilan/Dessert
+454;Puding Maizena;Diet Lunak;160;4;5;28;Camilan/Dessert
+455;Soes Isi Vla;Diet Lunak;180;4;9;22;Camilan/Dessert
+456;Soes Isi Vla (DM);Diet DM (Diabetes);160;4;7;22;Camilan/Dessert
+457;Soes Isi Ayam;Diet Lunak;190;8;10;18;Camilan/Dessert
+465;Risol Mayo Panggang;Diet Makanan Biasa (Biasa);200;7;10;22;Camilan/Dessert
+487;Talam Santan;Diet Lunak;190;3;8;32;Camilan/Dessert
+489;Roti Daging;Diet Makanan Biasa (Biasa);230;12;10;25;Camilan/Dessert
+490;Risol Mayo;Diet Makanan Biasa (Biasa);200;7;11;20;Camilan/Dessert
+6;Roti Tawar;Diet Makanan Biasa (Biasa);150;5;2;28;Camilan/Dessert
+7;Roti Bakar;Diet Makanan Biasa (Biasa);220;6;10;30;Camilan/Dessert
+8;Nasi Goreng Oriental;Diet Makanan Biasa (Biasa);450;12;15;65;Lainnya
+32;Nasi Putih;Diet Makanan Biasa (Biasa);260;5;1;56;Lainnya
+43;Bachian Soun Kentang Wortel;Diet Lunak;200;8;6;25;Lainnya
+47;Garlic Bread;Diet Makanan Biasa (Biasa);180;4;8;22;Lainnya
+52;Croquette Potatoes;Diet Makanan Biasa (Biasa);220;5;12;25;Lainnya
+53;Corn on the Cob;Diet Makanan Biasa (Biasa);150;5;2;30;Lainnya
+69;Buttered Parsley Potatoes;Diet Makanan Biasa (Biasa);180;4;8;25;Lainnya
+82;Mie Goreng Oriental;Diet Makanan Biasa (Biasa);420;12;14;65;Lainnya
+87;Wedges Potatoes;Diet Makanan Biasa (Biasa);200;4;10;28;Lainnya
+97;Fuyung Hai;Diet Makanan Biasa (Biasa);260;18;12;18;Lainnya
+121;Corn Chowder;Diet Lunak;190;6;9;22;Lainnya
+123;Mashed Potatoes;Diet Lunak;160;4;6;25;Lainnya
+135;Japchae;Diet Makanan Biasa (Biasa);320;10;12;55;Lainnya
+140;Potatoes in Jacket;Diet Makanan Biasa (Biasa);180;5;6;35;Lainnya
+144;Bihun Kuah;Diet Lunak;250;8;6;45;Lainnya
+153;Yakitori;Diet Makanan Biasa (Biasa);210;24;10;8;Lainnya
+192;Lyonnaise Potatoes;Diet Makanan Biasa (Biasa);190;4;9;26;Lainnya
+202;Yangnyeom Tongdak;Diet Makanan Biasa (Biasa);280;26;14;12;Lainnya
+203;Bihun Goreng Oriental;Diet Makanan Biasa (Biasa);380;10;12;65;Lainnya
+214;Spaghetti Bolognese;Diet Makanan Biasa (Biasa);420;18;14;55;Lainnya
+222;Kwetiaw Goreng Oriental;Diet Makanan Biasa (Biasa);400;12;14;62;Lainnya
+228;Tomato Mosaic;Diet Makanan Biasa (Biasa);110;3;5;15;Lainnya
+230;Soto Bandung;Diet Lunak;220;15;10;20;Lainnya
+243;Caulilflower Au Gratin;Diet Makanan Biasa (Biasa);180;8;10;15;Lainnya
+246;Nasi Goreng Spesial;Diet Makanan Biasa (Biasa);480;15;18;70;Lainnya
+247;Mie Godog Jawa;Diet Makanan Biasa (Biasa);380;12;14;60;Lainnya
+266;Sambal Goreng Kentang;Diet Makanan Biasa (Biasa);200;5;10;25;Lainnya
+275;Buttered Baby Green Beans;Diet Makanan Biasa (Biasa);90;3;5;10;Lainnya
+280;Soto Bangkong;Diet Lunak;230;16;10;22;Lainnya
+309;Nasi Kuning;Diet Makanan Biasa (Biasa);360;7;12;65;Lainnya
+310;Cantonese Fried Noodle;Diet Makanan Biasa (Biasa);380;14;12;55;Lainnya
+312;Gulai Daun Singkong;Diet Makanan Biasa (Biasa);140;6;8;12;Sayuran
+315;Perkedel Kentang;Diet Makanan Biasa (Biasa);180;6;10;18;Lainnya
+340;Laksa Penang;Diet Makanan Biasa (Biasa);380;15;18;45;Lainnya
+366;Lontong Cap Gomeh;Diet Makanan Biasa (Biasa);380;10;12;65;Lainnya
+380;Baked Creamy Pure Potatoes;Diet Lunak;220;6;12;28;Lainnya
+384;Rawon Surabaya;Diet Makanan Biasa (Biasa);280;20;14;18;Lainnya
+391;Tom Yum Goong;Diet Lunak;180;12;8;12;Lainnya
+397;William Potatoes;Diet Makanan Biasa (Biasa);190;4;9;26;Lainnya
+398;Spaghetti Carbonara;Diet Makanan Biasa (Biasa);420;16;18;50;Lainnya
+405;Bola-Bola Ubi;Diet Lunak;160;3;6;25;Lainnya
+406;Pisak Kepok Kukus;Diet Lunak;140;2;1;32;Lainnya
+409;Ongol-Ongol;Diet Lunak;130;2;3;28;Lainnya
+413;Hunkwe Marmer;Diet Lunak;160;3;4;30;Lainnya
+414;Mini Pizza;Diet Makanan Biasa (Biasa);240;8;10;30;Lainnya
+417;Getuk Singkong;Diet Lunak;150;2;4;32;Lainnya
+421;Sawut Singkong;Diet Lunak;140;2;3;30;Lainnya
+422;Cantik Manis;Diet Lunak;170;3;5;32;Lainnya
+423;Cantik Manis (DM);Diet DM (Diabetes);140;3;4;28;Lainnya
+427;Roti Abon;Diet Makanan Biasa (Biasa);200;6;8;28;Lainnya
+429;Kelepon Ubi Ungu;Diet Lunak;140;2;3;28;Lainnya
+430;Sosis Solo;Diet Makanan Biasa (Biasa);180;8;8;18;Lainnya
+431;Sosis Solo Panggang;Diet Makanan Biasa (Biasa);170;8;7;18;Lainnya
+433;Lapis Surabaya;Diet Lunak;240;5;10;35;Lainnya
+437;Biji Salak;Diet Lunak;160;3;4;32;Lainnya
+438;Putu Ayu;Diet Lunak;150;3;5;28;Lainnya
+439;Sate Cenil Singkong;Diet Lunak;140;2;3;30;Lainnya
+440;Putu Ayu #Kelapa;Diet Lunak;155;3;6;28;Lainnya
+445;Lapis Singkong;Diet Lunak;170;3;6;32;Lainnya
+446;Bolu Kukus Mekar Coklat Pandan;Diet Lunak;200;4;8;32;Lainnya
+451;Getuk Singkong #Kelapa;Diet Lunak;155;2;5;30;Lainnya
+458;Singkong Thailand;Diet Lunak;220;3;8;40;Lainnya
+459;Lapis Pepe;Diet Lunak;180;3;6;35;Lainnya
+461;Getuk Ubi;Diet Lunak;150;2;4;30;Lainnya
+462;Cake Roll Batik;Diet Lunak;210;5;9;30;Lainnya
+466;Getuk Ubi Ungu;Diet Lunak;145;2;4;30;Lainnya
+467;Bitter Ballen;Diet Makanan Biasa (Biasa);220;8;12;20;Lainnya
+468;Bitter Ballen Panggang;Diet Makanan Biasa (Biasa);200;8;10;20;Lainnya
+469;Bitter Ballen Panggang #SS;Diet Makanan Biasa (Biasa);190;8;9;20;Lainnya
+470;Mataroda;Diet Makanan Biasa (Biasa);190;6;8;25;Lainnya
+471;Crackers Isi Selai Strawberry;Diet Makanan Biasa (Biasa);140;3;5;22;Lainnya
+472;Roti Tawar Pandan Isi Vanilla Cream;Diet Makanan Biasa (Biasa);180;4;7;28;Lainnya
+473;Crackers Isi Selai Srikaya;Diet Makanan Biasa (Biasa);145;3;5;23;Lainnya
+474;Roti Tawar Pandan Isi Selai Strawberry;Diet Makanan Biasa (Biasa);175;4;6;27;Lainnya
+475;Crackers Isi Selai Blueberry;Diet Makanan Biasa (Biasa);140;3;5;22;Lainnya
+476;Roti Tawar Pandan Isi Selai Srikaya;Diet Makanan Biasa (Biasa);175;4;6;27;Lainnya
+477;Crackers Isi Selai Vanilla Cream;Diet Makanan Biasa (Biasa);150;3;6;24;Lainnya
+478;Roti Tawar Isi Selai Kacang;Diet Makanan Biasa (Biasa);170;4;7;25;Lainnya
+479;Roti Tawar Pandan Isi Blueberry;Diet Makanan Biasa (Biasa);175;4;6;27;Lainnya
+480;Makanan;Diet Makanan Biasa (Biasa);300;15;12;35;Lainnya
+482;Minuman;Diet Cair;50;0;0;12;Lainnya
+488;Ketimus Singkong;Diet Lunak;160;3;5;30;Lainnya
+491;Roti Tawar Isi Selai Vanilla Cream;Diet Makanan Biasa (Biasa);180;4;7;28;Lainnya
+504;Cantonese-Fried-Noodle;Diet Makanan Biasa (Biasa);380;14;12;55;Lainnya
+567;Mie Godog Jawa Vegetarian;Diet Makanan Biasa (Biasa);320;10;10;55;Lainnya
+36;Ayam Bakar Kecap;Diet Makanan Biasa (Biasa);220;25;10;8;Lauk Protein
+41;Steak Ikan Oriental;Diet Makanan Biasa (Biasa);250;25;10;8;Lauk Protein
+42;Ayam Lada Hitam;Diet Makanan Biasa (Biasa);280;28;12;10;Lauk Protein
+51;Fish Jambalaya;Diet Makanan Biasa (Biasa);320;22;12;28;Lauk Protein
+56;Ikan Bumbu Tomat;Diet Makanan Biasa (Biasa);240;24;10;12;Lauk Protein
+57;Ayam Masak Habang;Diet Makanan Biasa (Biasa);260;26;12;8;Lauk Protein
+61;Chicken Katsu;Diet Makanan Biasa (Biasa);320;25;15;18;Lauk Protein
+62;Chicken Katsu Panggang;Diet Makanan Biasa (Biasa);280;28;10;15;Lauk Protein
+63;Beef Teppanyaki;Diet Makanan Biasa (Biasa);350;30;18;12;Lauk Protein
+68;Roasted Chicken w/ Tomato Sauce;Diet Makanan Biasa (Biasa);280;30;12;8;Lauk Protein
+75;Ikan Rica-Rica;Diet Makanan Biasa (Biasa);230;22;10;10;Lauk Protein
+76;Ayam Garang Asam;Diet Makanan Biasa (Biasa);240;25;10;12;Lauk Protein
+80;Bistik Ayam Oriental;Diet Makanan Biasa (Biasa);270;26;12;10;Lauk Protein
+81;Beef Teriyaki;Diet Makanan Biasa (Biasa);320;28;15;15;Lauk Protein
+86;Coq Au Vin Blanc;Diet Makanan Biasa (Biasa);290;28;14;10;Lauk Protein
+91;Ayam Singgang;Diet Makanan Biasa (Biasa);250;24;12;8;Lauk Protein
+92;Orak-Arik Daging;Diet Makanan Biasa (Biasa);220;18;12;10;Lauk Protein
+96;Ikan Szechuan;Diet Makanan Biasa (Biasa);240;23;11;10;Lauk Protein
+102;Beef Frank Shaslik w/ BBQ Sauce;Diet Makanan Biasa (Biasa);340;25;18;15;Lauk Protein
+110;Ikan Masak Kemangi;Diet Makanan Biasa (Biasa);230;22;10;12;Lauk Protein
+111;Sapi Lada Hitam;Diet Makanan Biasa (Biasa);310;28;16;12;Lauk Protein
+115;Ayam Panggang Thailand;Diet Makanan Biasa (Biasa);260;27;12;8;Lauk Protein
+122;Grilled Chicken w/ Tomato Salsa Sauce;Diet Makanan Biasa (Biasa);250;28;10;8;Lauk Protein
+126;Soto Ayam;Diet Lunak;280;18;10;25;Lauk Protein
+128;Ayam Bakar Cianjur;Diet Makanan Biasa (Biasa);240;26;12;8;Lauk Protein
+129;Ikan Panggang Dabu-Dabu;Diet Makanan Biasa (Biasa);220;24;9;8;Lauk Protein
+133;Tim Ikan Hainan;Diet Lunak;230;22;10;12;Lauk Protein
+134;Ayam Kluyuk;Diet Makanan Biasa (Biasa);270;25;12;18;Lauk Protein
+139;Fish steak a la Meuniere;Diet Makanan Biasa (Biasa);260;24;12;10;Lauk Protein
+146;Pepes Ayam;Diet Lunak;220;24;10;8;Lauk Protein
+147;Empal Gentong;Diet Makanan Biasa (Biasa);280;22;14;15;Lauk Protein
+151;Ikan Asam Manis;Diet Makanan Biasa (Biasa);240;22;10;15;Lauk Protein
+157;Beef Steak w/ Demi-Glace Sauce;Diet Makanan Biasa (Biasa);380;32;20;12;Lauk Protein
+163;Ikan Woku;Diet Makanan Biasa (Biasa);230;23;10;10;Lauk Protein
+164;Ayam Goreng Kecap;Diet Makanan Biasa (Biasa);260;25;14;10;Lauk Protein
+168;Steam Ayam Saus Tiram;Diet Lunak;240;26;10;12;Lauk Protein
+175;Grilled Barbeque Fish;Diet Makanan Biasa (Biasa);230;24;9;8;Lauk Protein
+180;Chicken Sandwich;Diet Makanan Biasa (Biasa);280;18;12;30;Lauk Protein
+182;Ayam Rica-Rica;Diet Makanan Biasa (Biasa);250;26;12;10;Lauk Protein
+187;Chicken Kung Pao;Diet Makanan Biasa (Biasa);290;25;14;15;Lauk Protein
+190;Pan Seared Chicken;Diet Makanan Biasa (Biasa);260;28;12;8;Lauk Protein
+196;Burger Daging Saus Barbeque;Diet Makanan Biasa (Biasa);320;25;16;18;Lauk Protein
+197;Paklay Hati Ayam;Diet Makanan Biasa (Biasa);210;18;12;10;Lauk Protein
+210;Beef Cannelloni w/ BBQ Sauce;Diet Makanan Biasa (Biasa);380;20;18;35;Lauk Protein
+216;Kalio Daging;Diet Makanan Biasa (Biasa);310;24;16;12;Lauk Protein
+217;Besengek Ayam;Diet Makanan Biasa (Biasa);260;24;14;10;Lauk Protein
+221;Ayam Pandan;Diet Makanan Biasa (Biasa);250;26;12;8;Lauk Protein
+227;Fish Picatta w/ Bechamel Sauce;Diet Makanan Biasa (Biasa);260;22;12;12;Lauk Protein
+231;Ikan Bumbu Kuning;Diet Makanan Biasa (Biasa);230;22;10;12;Lauk Protein
+232;Ayam Bakar Padang;Diet Makanan Biasa (Biasa);250;26;12;8;Lauk Protein
+237;Ikan Goreng Tepung Asam Manis;Diet Makanan Biasa (Biasa);260;20;12;18;Lauk Protein
+242;Grilled Chicken American Style;Diet Makanan Biasa (Biasa);270;28;12;10;Lauk Protein
+251;Ayam Panggang Bumbu Bali;Diet Makanan Biasa (Biasa);260;26;12;10;Lauk Protein
+255;Tim Ayam Hainan;Diet Lunak;240;25;10;12;Lauk Protein
+261;Chicken Kiev;Diet Makanan Biasa (Biasa);340;25;18;15;Lauk Protein
+264;Ayam Bakar Taliwang;Diet Makanan Biasa (Biasa);250;26;12;10;Lauk Protein
+268;Ayam Szechuan;Diet Makanan Biasa (Biasa);270;25;14;12;Lauk Protein
+274;Chicken Barbeque Sauce;Diet Makanan Biasa (Biasa);280;28;14;12;Lauk Protein
+281;Ayam Tuturuga;Diet Makanan Biasa (Biasa);260;25;14;10;Lauk Protein
+282;Daging Cabe Ijo;Diet Makanan Biasa (Biasa);290;24;16;12;Lauk Protein
+287;Ikan Saus Oriental;Diet Makanan Biasa (Biasa);240;22;12;12;Lauk Protein
+292;Chicken Cordon Bleu;Diet Makanan Biasa (Biasa);320;28;16;12;Lauk Protein
+296;Ikan Dabu-Dabu;Diet Makanan Biasa (Biasa);220;24;9;8;Lauk Protein
+297;Opor Ayam;Diet Makanan Biasa (Biasa);260;24;14;10;Lauk Protein
+301;Ikan Saus Tiram;Diet Makanan Biasa (Biasa);240;23;10;12;Lauk Protein
+306;Fish Roll;Diet Makanan Biasa (Biasa);240;20;12;15;Lauk Protein
+313;Rendang Daging;Diet Makanan Biasa (Biasa);320;22;18;10;Lauk Protein
+318;Chicken Mongolian;Diet Makanan Biasa (Biasa);290;26;14;15;Lauk Protein
+319;Ikan Masak Wijen;Diet Makanan Biasa (Biasa);230;22;11;10;Lauk Protein
+324;Style Grilled Chicken Kabobs;Diet Makanan Biasa (Biasa);260;28;12;10;Lauk Protein
+328;Semur Ayam;Diet Makanan Biasa (Biasa);260;25;12;12;Lauk Protein
+337;Fish Steak w/ Cream Sauce;Diet Makanan Biasa (Biasa);270;24;14;10;Lauk Protein
+342;Ikan Gulung Bumbu Balado;Diet Makanan Biasa (Biasa);250;22;12;12;Lauk Protein
+343;Se'i Ayam;Diet Makanan Biasa (Biasa);240;26;10;10;Lauk Protein
+348;Ikan Gulung Asam Manis;Diet Makanan Biasa (Biasa);250;22;12;15;Lauk Protein
+353;Grilled Chicken Oregano;Diet Makanan Biasa (Biasa);260;27;12;8;Lauk Protein
+356;Daging Gulung Saus Kecap;Diet Makanan Biasa (Biasa);280;24;15;12;Lauk Protein
+360;Tim Ayam Jahe;Diet Lunak;240;25;10;12;Lauk Protein
+367;Chicken Steak Mushroom Sauce;Diet Makanan Biasa (Biasa);280;26;14;12;Lauk Protein
+374;Ikan Panggang Oriental;Diet Makanan Biasa (Biasa);230;23;10;10;Lauk Protein
+375;Ayam Krispi Saus Teriyaki;Diet Makanan Biasa (Biasa);290;25;14;15;Lauk Protein
+379;Chicken Piccata w/ Milanese Sauce;Diet Makanan Biasa (Biasa);290;26;14;15;Lauk Protein
+387;Daging Bumbu Rujak;Diet Makanan Biasa (Biasa);290;22;16;12;Lauk Protein
+396;Baked Chicken Cheese;Diet Makanan Biasa (Biasa);320;28;16;12;Lauk Protein
+435;Samosa Isi Ayam;Diet Makanan Biasa (Biasa);230;9;12;22;Lauk Protein
+436;Samosa Isi Ayam Panggang;Diet Makanan Biasa (Biasa);210;9;10;22;Lauk Protein
+502;Steak-Ikan-Oriental;Diet Makanan Biasa (Biasa);250;25;10;8;Lauk Protein
+505;Ayam-Bakar-Cianjur;Diet Makanan Biasa (Biasa);240;26;12;8;Lauk Protein
+535;Asian Beef Roll;Diet Makanan Biasa (Biasa);280;24;14;12;Lauk Protein
+538;Beef Bulgogi;Diet Makanan Biasa (Biasa);320;28;16;15;Lauk Protein
+541;Ayam Hainan;Diet Makanan Biasa (Biasa);240;26;10;12;Lauk Protein
+549;Ayam Goreng Mentega;Diet Makanan Biasa (Biasa);270;24;14;10;Lauk Protein
+559;Chicken Teriyaki;Diet Makanan Biasa (Biasa);280;28;12;12;Lauk Protein
+563;Empal Daging;Diet Makanan Biasa (Biasa);280;24;14;12;Lauk Protein
+10;Omelette;Diet Makanan Biasa (Biasa);180;12;12;4;Lauk Protein Sekunder
+11;Telur Rebus;Diet Lunak;80;6;5;1;Lauk Protein Sekunder
+12;Telur Dadar;Diet Lunak;160;12;12;2;Lauk Protein Sekunder
+13;Telur Ceplok;Diet Lunak;90;6;7;1;Lauk Protein Sekunder
+14;Telur Orak Arik;Diet Lunak;140;10;10;4;Lauk Protein Sekunder
+37;Telur Sembunyi;Diet Lunak;180;12;10;5;Lauk Protein Sekunder
+38;Tim Tahu Isi;Diet Lunak;160;10;8;10;Lauk Protein Sekunder
+40;Sup Tahu China;Diet Lunak;110;6;4;12;Lauk Protein Sekunder
+44;Cah Tahu;Diet Makanan Biasa (Biasa);150;10;8;8;Lauk Protein Sekunder
+44;Cah Tahu;B U/P;150;10;8;8;Lauk Protein Sekunder
+44;Cah Tahu;Untuk Penunggu Pasien;150;10;8;8;Lauk Protein Sekunder
+58;Cah Tempe Seledri;Diet Makanan Biasa (Biasa);140;9;7;10;Lauk Protein Sekunder
+77;Tahu Cabe Ijo;Diet Makanan Biasa (Biasa);160;11;8;9;Lauk Protein Sekunder
+93;Terik Tempe;Diet Makanan Biasa (Biasa);180;10;9;12;Lauk Protein Sekunder
+98;Tahu Teriyaki;Diet Makanan Biasa (Biasa);170;12;8;10;Lauk Protein Sekunder
+112;Orek Tempe;Diet Makanan Biasa (Biasa);170;11;8;15;Lauk Protein Sekunder
+116;Telur Puyuh Saus Tiram;Diet Lunak;140;10;8;6;Lauk Protein Sekunder
+117;Cah Tahu Kucai;Diet Makanan Biasa (Biasa);150;10;8;8;Lauk Protein Sekunder
+130;Burger Tahu Panggang;Diet Makanan Biasa (Biasa);200;12;10;18;Lauk Protein Sekunder
+132;Sup Wortel Tahu Sutra;Diet Lunak;110;6;4;14;Lauk Protein Sekunder
+148;Tahu Bandung;Diet Makanan Biasa (Biasa);160;10;8;12;Lauk Protein Sekunder
+165;Burger Tempe;Diet Makanan Biasa (Biasa);190;11;9;18;Lauk Protein Sekunder
+169;Mini Omelette;Diet Lunak;160;12;10;4;Lauk Protein Sekunder
+170;Cah Tahu Jamur;Diet Makanan Biasa (Biasa);155;11;8;9;Lauk Protein Sekunder
+183;Telur Opor;Diet Lunak;200;14;12;8;Lauk Protein Sekunder
+184;Tahu Aromatik;Diet Makanan Biasa (Biasa);165;11;9;10;Lauk Protein Sekunder
+186;Sup Jagung Sisir Telur;Diet Lunak;160;6;5;22;Lauk Protein Sekunder
+188;Angsio Tahu;Diet Makanan Biasa (Biasa);170;12;8;12;Lauk Protein Sekunder
+223;Rollade Tahu;Diet Lunak;180;12;10;12;Lauk Protein Sekunder
+233;Bacem Tempe;Diet Makanan Biasa (Biasa);170;10;8;15;Lauk Protein Sekunder
+252;Tempe Cabe Ijo;Diet Makanan Biasa (Biasa);165;10;8;14;Lauk Protein Sekunder
+265;Pindang Telur;Diet Lunak;140;10;8;6;Lauk Protein Sekunder
+276;Scrambled Cheese Egg;Diet Lunak;180;14;12;4;Lauk Protein Sekunder
+283;Oseng Tempe;Diet Makanan Biasa (Biasa);160;10;8;14;Lauk Protein Sekunder
+295;Sup Tahu Sayuran;Diet Lunak;120;7;4;14;Lauk Protein Sekunder
+298;Bacem Tahu;Diet Makanan Biasa (Biasa);160;10;7;14;Lauk Protein Sekunder
+300;Sup Telur Puyuh Wortel;Diet Lunak;140;8;6;15;Lauk Protein Sekunder
+314;Telur Dadar Padang;Diet Makanan Biasa (Biasa);200;14;14;6;Lauk Protein Sekunder
+320;Cah Tahu Tauco;Diet Makanan Biasa (Biasa);160;11;8;10;Lauk Protein Sekunder
+329;Tahu Bumbu Tomat;Diet Makanan Biasa (Biasa);160;11;8;12;Lauk Protein Sekunder
+344;Semur Tempe;Diet Makanan Biasa (Biasa);170;10;8;15;Lauk Protein Sekunder
+346;Sup Labu Siam Telur;Diet Lunak;140;8;6;15;Lauk Protein Sekunder
+349;Cah Tahu Saus Tiram;Diet Makanan Biasa (Biasa);155;11;8;10;Lauk Protein Sekunder
+355;Sayur Tempe;Diet Makanan Biasa (Biasa);140;9;6;12;Lauk Protein Sekunder
+371;Terik Tahu;Diet Makanan Biasa (Biasa);160;11;8;10;Lauk Protein Sekunder
+386;Telur Asin;Diet Makanan Biasa (Biasa);90;6;6;2;Lauk Protein Sekunder
+388;Tempe Mendoan;Diet Makanan Biasa (Biasa);180;10;10;12;Lauk Protein Sekunder
+389;Cah Tempe;Diet Makanan Biasa (Biasa);145;10;7;12;Lauk Protein Sekunder
+393;Cah Tahu Kapri;Diet Makanan Biasa (Biasa);155;11;8;10;Lauk Protein Sekunder
+460;Martabak Telur;Diet Makanan Biasa (Biasa);280;12;14;25;Lauk Protein Sekunder
+534;Pangsit Tahu Kuah;Diet Lunak;160;9;6;18;Lauk Protein Sekunder
+536;Tempe Bumbu Tomat;Diet Makanan Biasa (Biasa);160;10;8;12;Lauk Protein Sekunder
+539;Loaf Tahu;Diet Lunak;190;12;10;12;Lauk Protein Sekunder
+542;Mapo Tahu;Diet Makanan Biasa (Biasa);180;12;10;10;Lauk Protein Sekunder
+544;Tamagoyaki;Diet Lunak;140;10;8;6;Lauk Protein Sekunder
+545;Tim Tahu Kuning;Diet Lunak;160;11;8;10;Lauk Protein Sekunder
+547;Tahu Kukus Sayuran;Diet Lunak;150;10;6;12;Lauk Protein Sekunder
+550;Pangsit Tahu Asam Manis;Diet Makanan Biasa (Biasa);190;10;8;18;Lauk Protein Sekunder
+552;Cah Tempe Bawang Putih;Diet Makanan Biasa (Biasa);145;10;7;12;Lauk Protein Sekunder
+557;Burger Tahu Asam Manis;Diet Makanan Biasa (Biasa);200;12;9;18;Lauk Protein Sekunder
+560;Egg Roll;Diet Makanan Biasa (Biasa);200;8;10;20;Lauk Protein Sekunder
+562;Sup Kembang Tahu Wortel;Diet Lunak;120;6;4;15;Lauk Protein Sekunder
+564;Cah Tahu Bawang Putih;Diet Makanan Biasa (Biasa);150;10;8;8;Lauk Protein Sekunder
+22;Jus Pisang;Diet Cair;120;1;0;28;Minuman
+23;Jus Semangka;Diet Cair;80;1;0;20;Minuman
+24;Jus Pepaya;Diet Cair;90;1;0;22;Minuman
+25;Jus Melon;Diet Cair;80;1;0;20;Minuman
+26;Jus Pir;Diet Cair;85;0,5;0;21;Minuman
+27;Jus Apel Fuji;Diet Cair;95;0,5;0;23;Minuman
+28;Jus Jeruk;Diet Cair;90;1;0;22;Minuman
+29;Milk;Diet Cair;150;8;8;12;Minuman
+30;Low Fat Milk;Diet Cair;120;8;3;12;Minuman
+31;Tea;Diet Cair;5;0;0;1;Minuman
+125;Puding Susu;Diet Lunak;180;5;6;28;Minuman
+365;Puding Susu Coklat;Diet Lunak;200;5;8;28;Minuman
+566;Dummy Juice;Diet Cair;80;1;0;20;Minuman
+1;Bubur Ayam;1000 Cal P34 L51 KH 107;1000;34;51;107;Nasi/Bubur
+1;Bubur Ayam;1200 Cal;1200;;;;Nasi/Bubur
+1;Bubur Ayam;1200 Cal P50 L40 KH225;1200;50;40;225;Nasi/Bubur
+1;Bubur Ayam;1400 Cal P40 L50 KH200;1400;40;50;200;Nasi/Bubur
+1;Bubur Ayam;1400 Cal P40 L60 KH175;1400;40;60;175;Nasi/Bubur
+1;Bubur Ayam;1500 Cal P40 L50 KH225;1500;40;50;225;Nasi/Bubur
+1;Bubur Ayam;1500 Cal P40 L50 KH250;1500;40;50;250;Nasi/Bubur
+1;Bubur Ayam;1500 Cal P50 L60 KH190;1500;50;60;190;Nasi/Bubur
+1;Bubur Ayam;1500 Cal P60 L50 KH215;1500;60;50;215;Nasi/Bubur
+1;Bubur Ayam;1500 Cal P60 L60 KH180;1500;60;60;180;Nasi/Bubur
+1;Bubur Ayam;1500 Cal;1500;;;;Nasi/Bubur
+1;Bubur Ayam;1700 Cal;1700;;;;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P40 L50 KH275;1700;40;50;275;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P40 L60 KH250;1700;40;60;250;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P50 L60 KH240;1700;50;60;240;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P60 L50 KH255;1700;60;50;255;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P60 L60 KH250;1700;60;60;250;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P60 L70 KH210;1700;60;70;210;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P80 L50 KH235;1700;80;50;235;Nasi/Bubur
+1;Bubur Ayam;1700 Cal P80 L50 KH280;1700;80;50;280;Nasi/Bubur
+1;Bubur Ayam;1800 Cal P50 L60 KH265;1800;50;60;265;Nasi/Bubur
+1;Bubur Ayam;1800 Cal P60 L50 KH280;1800;60;50;280;Nasi/Bubur
+1;Bubur Ayam;1900 Cal P80 L50 KH285;1900;80;50;285;Nasi/Bubur
+1;Bubur Ayam;1900 Cal P80 L60 KH260;1900;80;60;260;Nasi/Bubur
+1;Bubur Ayam;2100 Cal P40 L60 KH250;2100;40;60;250;Nasi/Bubur
+1;Bubur Ayam;2100 Cal P50 L60 KH340;2100;50;60;340;Nasi/Bubur
+1;Bubur Ayam;2100 Cal P80 L50 KH330;2100;80;50;330;Nasi/Bubur
+1;Bubur Ayam;Diet Lunak;350;18;12;45;Nasi/Bubur
+1;Bubur Ayam;B U/P;350;18;12;45;Nasi/Bubur
+1;Bubur Ayam;Untuk Penunggu Pasien;350;18;12;45;Nasi/Bubur
+9;Bubur Sumsum;Diet Lunak;220;4;8;35;Nasi/Bubur
+33;Nasi Tim;Diet Lunak;280;6;2;58;Nasi/Bubur
+34;Bubur;Diet Lunak;200;6;5;35;Nasi/Bubur
+72;Nasi Tim Ayam;Diet Lunak;320;15;8;45;Nasi/Bubur
+73;Nasi Uduk;Diet Makanan Biasa (Biasa);380;7;15;60;Nasi/Bubur
+107;Yeung Chow Fried Rice;Diet Makanan Biasa (Biasa);420;12;12;70;Nasi/Bubur
+143;Bubur Manado;Diet Lunak;320;12;10;48;Nasi/Bubur
+158;Pilaf Rice;Diet Makanan Biasa (Biasa);300;6;8;55;Nasi/Bubur
+179;Nasi Hainan;Diet Makanan Biasa (Biasa);350;10;8;65;Nasi/Bubur
+279;Bubur Kacang Hijau;Diet Lunak;250;8;6;45;Nasi/Bubur
+311;Bubur Sumsum Pandan;Diet Lunak;220;4;8;35;Nasi/Bubur
+463;Bubur Mutiara;Diet Lunak;180;3;4;38;Nasi/Bubur
+464;Bubur Mutiara (DM);Diet DM (Diabetes);160;3;3;35;Nasi/Bubur
+483;Nasi Timbel;Diet Makanan Biasa (Biasa);380;7;12;70;Nasi/Bubur
+484;Nasi Tim Timbel;Diet Lunak;320;8;10;55;Nasi/Bubur
+39;Tumis Buncis Jagung Manis;Diet Makanan Biasa (Biasa);80;3;4;10;Sayuran
+46;Cah Wortel Jamur;Diet Makanan Biasa (Biasa);90;3;4;12;Sayuran
+49;Mixed Green Salad;Diet Makanan Biasa (Biasa);70;2;3;8;Sayuran
+50;Cream of Carrot Soup;Diet Lunak;140;4;7;15;Sayuran
+59;Tumis Timun Jepang Wortel;Diet Makanan Biasa (Biasa);75;2;4;10;Sayuran
+60;Sup Jamur Kuping;Diet Lunak;100;4;3;14;Sayuran
+64;Cah Tofu;Diet Makanan Biasa (Biasa);150;10;8;8;Sayuran
+65;Cah Wortel Jagung Semi;Diet Makanan Biasa (Biasa);85;3;4;12;Sayuran
+66;Garden Salad;Diet Makanan Biasa (Biasa);65;2;2;8;Sayuran
+70;Three Kind of Vegetables;Diet Makanan Biasa (Biasa);90;4;3;12;Sayuran
+74;Sup Bayam Labu Siam;Diet Lunak;90;4;2;12;Sayuran
+78;Cah Oyong Wortel;Diet Makanan Biasa (Biasa);80;3;4;10;Sayuran
+79;Sup Sayuran;Diet Lunak;100;4;3;14;Sayuran
+83;Cah Jagung Semi;Diet Makanan Biasa (Biasa);90;3;4;14;Sayuran
+84;Wilted Salad;Diet Makanan Biasa (Biasa);75;3;4;8;Sayuran
+88;Carrot Timbale;Diet Lunak;140;3;6;18;Sayuran
+94;Orak-Arik Sayuran;Diet Makanan Biasa (Biasa);120;6;6;12;Sayuran
+99;Capcay Cah;Diet Makanan Biasa (Biasa);140;6;7;12;Sayuran
+100;Composed Salad;Diet Makanan Biasa (Biasa);130;6;6;12;Sayuran
+103;Sauteed Butter Potatoes;Diet Makanan Biasa (Biasa);190;4;9;26;Sayuran
+104;Bouquetiere of Vegetables;Diet Makanan Biasa (Biasa);85;4;3;12;Sayuran
+108;Macaroni Schotel;Diet Lunak;280;10;12;35;Sayuran
+109;Sup Sosis Sayuran;Diet Lunak;160;8;8;15;Sayuran
+113;Tumis Tauge Daun Bawang;Diet Makanan Biasa (Biasa);80;4;4;10;Sayuran
+118;Cah Pokcoy;Diet Makanan Biasa (Biasa);70;3;3;8;Sayuran
+119;Cah Tauge Daun Bawang;Diet Makanan Biasa (Biasa);75;4;3;9;Sayuran
+120;Macaroni Salad;Diet Makanan Biasa (Biasa);180;6;8;22;Sayuran
+124;Buttered Zucchini Carrot;Diet Makanan Biasa (Biasa);95;3;5;12;Sayuran
+131;Tumis Bayam Jamur;Diet Makanan Biasa (Biasa);85;5;4;10;Sayuran
+136;Cah Buncis Bakso;Diet Makanan Biasa (Biasa);160;12;8;12;Sayuran
+137;Fresh Fruits Salad;Diet Lunak;120;2;1;28;Sayuran
+141;Spinach Timbale;Diet Lunak;140;6;7;12;Sayuran
+145;Sayur Asem;Diet Makanan Biasa (Biasa);110;5;3;18;Sayuran
+149;Cah Labu Siam;Diet Makanan Biasa (Biasa);80;3;4;10;Sayuran
+154;Cah Zucchini;Diet Makanan Biasa (Biasa);75;3;4;9;Sayuran
+155;Mexican Salad;Diet Makanan Biasa (Biasa);130;5;6;15;Sayuran
+159;Braised White Cabbage Carrot;Diet Makanan Biasa (Biasa);90;3;4;12;Sayuran
+160;Braised White Carrot;Diet Makanan Biasa (Biasa);85;2;4;14;Sayuran
+166;Tumis Timun Jepang;Diet Makanan Biasa (Biasa);70;2;3;10;Sayuran
+171;Cah Kangkung;Diet Makanan Biasa (Biasa);80;4;4;10;Sayuran
+172;Cah Timun Jepang;Diet Makanan Biasa (Biasa);70;2;3;9;Sayuran
+173;Vegetable Salad;Diet Makanan Biasa (Biasa);65;3;2;8;Sayuran
+176;Sauteed Broccoli Mushroom;Diet Makanan Biasa (Biasa);90;5;5;10;Sayuran
+177;Sauteed Kyuri;Diet Makanan Biasa (Biasa);75;2;4;8;Sayuran
+185;Tumis Kacang Panjang Tauge;Diet Makanan Biasa (Biasa);85;5;4;12;Sayuran
+189;Russian Salad;Diet Makanan Biasa (Biasa);140;5;8;15;Sayuran
+193;Julienne Vegetables;Diet Makanan Biasa (Biasa);80;3;3;12;Sayuran
+195;Bening Bayam Jagung Manis;Diet Lunak;100;4;2;18;Sayuran
+199;Tumis Sayuran;Diet Makanan Biasa (Biasa);85;4;4;12;Sayuran
+204;Cah Kapri;Diet Makanan Biasa (Biasa);80;4;3;10;Sayuran
+205;Cah Sayuran;Diet Makanan Biasa (Biasa);85;4;4;12;Sayuran
+206;Italian Salad;Diet Makanan Biasa (Biasa);120;4;7;10;Sayuran
+211;Sauteed Macaroni;Diet Makanan Biasa (Biasa);250;8;10;38;Sayuran
+212;Sauteed Long Beans;Diet Makanan Biasa (Biasa);90;4;4;12;Sayuran
+224;Cah Brokoli;Diet Makanan Biasa (Biasa);80;5;4;10;Sayuran
+225;Chef Salad;Diet Makanan Biasa (Biasa);180;12;10;12;Sayuran
+234;Oseng Buncis Bakso;Diet Makanan Biasa (Biasa);160;12;8;12;Sayuran
+239;Cah Caysim Wortel;Diet Makanan Biasa (Biasa);75;3;3;10;Sayuran
+240;Nicoise Salad;Diet Makanan Biasa (Biasa);190;15;10;12;Sayuran
+244;Sauteed Green Beans;Diet Makanan Biasa (Biasa);85;3;4;10;Sayuran
+250;Ikan Acar Kuning;Diet Makanan Biasa (Biasa);220;20;10;12;Sayuran
+253;Tumis Wortel Daun Bawang;Diet Makanan Biasa (Biasa);80;3;4;12;Sayuran
+258;Cah Baby Pokcoy;Diet Makanan Biasa (Biasa);70;3;3;8;Sayuran
+259;Green Salad w/ Italian Dressing;Diet Makanan Biasa (Biasa);110;3;8;8;Sayuran
+260;Vegetable Vichyssoise Soup;Diet Lunak;150;5;7;18;Sayuran
+262;Stir Fried Fresh Young Vegetables;Diet Makanan Biasa (Biasa);95;4;5;12;Sayuran
+269;Ikan Cah Jahe;Diet Makanan Biasa (Biasa);220;22;10;10;Sayuran
+271;Cah Baby Buncis;Diet Makanan Biasa (Biasa);80;4;4;10;Sayuran
+272;Curry Chicken Salad;Diet Makanan Biasa (Biasa);220;18;12;15;Sayuran
+278;Ketupat Sayur;Diet Makanan Biasa (Biasa);320;8;10;55;Sayuran
+284;Tumis Tauge Wortel;Diet Makanan Biasa (Biasa);80;4;4;10;Sayuran
+289;Cah Tauge Bangkok;Diet Makanan Biasa (Biasa);80;4;4;10;Sayuran
+290;Fruit Cocktail Salad;Diet Lunak;130;2;1;30;Sayuran
+293;Vichy Carrots;Diet Makanan Biasa (Biasa);110;2;5;15;Sayuran
+299;Acar Kuning Sayuran;Diet Makanan Biasa (Biasa);90;3;4;14;Sayuran
+303;Cah Kailan Wortel;Diet Makanan Biasa (Biasa);80;4;4;10;Sayuran
+304;Cah Wortel;Diet Makanan Biasa (Biasa);70;2;3;12;Sayuran
+305;Cauliflower a la Grecque;Diet Makanan Biasa (Biasa);130;6;6;12;Sayuran
+307;Buttered Mix Vegetables;Diet Makanan Biasa (Biasa);100;4;5;12;Sayuran
+316;Cah Kacang Panjang;Diet Makanan Biasa (Biasa);85;4;4;12;Sayuran
+321;Cah Timun Jagung;Diet Makanan Biasa (Biasa);80;3;4;12;Sayuran
+322;Mediterranean Salad;Diet Makanan Biasa (Biasa);140;5;8;12;Sayuran
+323;Clear Vegetable Soup;Diet Lunak;90;4;2;14;Sayuran
+325;Jardiniere of Vegetables;Diet Makanan Biasa (Biasa);85;4;3;12;Sayuran
+330;Cah Labu Siam Jagung Manis;Diet Makanan Biasa (Biasa);85;3;4;14;Sayuran
+332;Ikan Cah Jamur;Diet Makanan Biasa (Biasa);220;22;10;10;Sayuran
+334;Cah Oyong Daun Bawang;Diet Makanan Biasa (Biasa);80;3;4;10;Sayuran
+335;Coleslaw;Diet Makanan Biasa (Biasa);120;2;8;12;Sayuran
+338;Sauteed Green Beans Sweet Corn;Diet Makanan Biasa (Biasa);110;4;5;16;Sayuran
+345;Tumis Jagung Muda;Diet Makanan Biasa (Biasa);90;3;4;14;Sayuran
+350;Cah Labu Air;Diet Makanan Biasa (Biasa);75;3;3;10;Sayuran
+351;Chicken Salad;Diet Makanan Biasa (Biasa);190;18;10;10;Sayuran
+354;Buttered Kyuri Carrot;Diet Makanan Biasa (Biasa);95;2;5;12;Sayuran
+358;Oseng Buncis Wortel;Diet Makanan Biasa (Biasa);85;4;4;12;Sayuran
+361;Cah Bayam Jamur;Diet Makanan Biasa (Biasa);85;5;4;10;Sayuran
+362;Ensalada Sevillana;Diet Makanan Biasa (Biasa);150;6;8;12;Sayuran
+363;Chicken Vegetable Soup;Diet Lunak;160;12;6;15;Sayuran
+364;Macedoine of Vegetables;Diet Makanan Biasa (Biasa);90;4;3;14;Sayuran
+368;Sayur Lodeh;Diet Makanan Biasa (Biasa);140;6;6;18;Sayuran
+369;Lodeh Bening;Diet Makanan Biasa (Biasa);130;6;5;18;Sayuran
+372;Cah Kembang Kol Wortel;Diet Makanan Biasa (Biasa);85;4;4;12;Sayuran
+377;Cah Labu Siam Wortel;Diet Makanan Biasa (Biasa);80;3;4;10;Sayuran
+378;Huzarensalade;Diet Makanan Biasa (Biasa);180;8;10;15;Sayuran
+382;Sauteed Baby Corn;Diet Makanan Biasa (Biasa);100;3;5;15;Sayuran
+390;Tumis Kangkung;Diet Makanan Biasa (Biasa);85;5;4;10;Sayuran
+392;Beef Sauteed Onion;Diet Makanan Biasa (Biasa);310;26;16;12;Sayuran
+394;Green Vegetable Salad;Diet Makanan Biasa (Biasa);80;4;3;10;Sayuran
+415;Roti Isi Sayur;Diet Makanan Biasa (Biasa);180;6;8;22;Sayuran
+485;Beef Stuffed Spinach;Diet Makanan Biasa (Biasa);260;22;14;12;Sayuran
+558;Sup Makaroni Sayuran;Diet Lunak;170;7;6;22;Sup
+385;Sup Bakso Sayuran;Diet Lunak;160;10;6;18;Sup
+5;Chicken Cream Soup;Diet Lunak;180;8;9;15;Sup
+35;Sup Vermicelli Wortel;Diet Lunak;120;4;3;18;Sup
+55;Sup Panca Selera;Diet Lunak;130;5;4;18;Sup
+67;Meat Ball Soup;Diet Lunak;160;10;8;12;Sup
+85;Italian Minestrone Soup;Diet Lunak;160;6;5;22;Sup
+90;Sup Jagung Mutiara;Diet Lunak;170;5;6;25;Sup
+95;Sup Adobo;Diet Lunak;150;8;6;15;Sup
+101;Potage Garbure;Diet Lunak;180;7;8;20;Sup
+114;Miso Soup;Diet Lunak;90;5;3;12;Sup
+138;Hot Vichyssoise Soup;Diet Lunak;170;5;8;18;Sup
+156;Hungarian Goulash Soup;Diet Lunak;220;18;10;15;Sup
+167;Sup Szechuan;Diet Lunak;140;6;5;18;Sup
+174;Potato & Leek Soup;Diet Lunak;160;5;7;20;Sup
+181;Sup Kimlo Solo;Diet Lunak;130;7;5;15;Sup
+191;Tomato Basil Soup;Diet Lunak;130;4;6;16;Sup
+207;Cream of Mushroom Soup;Diet Lunak;160;6;8;15;Sup
+215;Sup Kacang Merah Wortel;Diet Lunak;150;7;4;22;Sup
+226;Red Bean Clear Soup;Diet Lunak;140;6;3;22;Sup
+241;Pasta Soup;Diet Lunak;170;7;6;22;Sup
+249;Sup Wortel Jagung Manis;Diet Lunak;140;5;5;20;Sup
+263;Sup Merah Delima;Diet Lunak;140;6;5;18;Sup
+273;French Onion Soup;Diet Lunak;170;6;8;18;Sup
+291;Old Fashioned Fish Soup;Diet Lunak;180;15;8;15;Sup
+317;Wonton Soup;Diet Lunak;150;8;5;18;Sup
+336;Mulligatawny Soup;Diet Lunak;180;7;8;20;Sup
+352;Cream of Corn Soup;Diet Lunak;160;5;7;20;Sup
+381;Pumpkin Cream Soup;Diet Lunak;150;5;7;18;Sup
+395;Red Bean Cream Soup;Diet Lunak;170;7;6;24;Sup
+503;Chicken-Cream-Soup;Diet Lunak;180;8;9;15;Sup
+525;Sup Oyong Wortel;Diet Lunak;100;4;3;14;Sup
+528;Sup Labu Siam Bakso;Diet Lunak;150;10;6;16;Sup
+537;Sup Labu Air Daun Bawang;Diet Lunak;110;5;4;14;Sup
+540;Sup Tekwan;Diet Lunak;170;10;6;18;Sup
+543;Sup Tim Merah;Diet Lunak;130;5;4;18;Sup
+546;Sup Bakso Ikan;Diet Lunak;160;12;6;15;Sup
+548;Sup Panca Warna;Diet Lunak;140;6;5;18;Sup
+556;Sup Oyong Soun;Diet Lunak;130;5;4;18;Sup
+565;Cream Soup;Diet Lunak;160;6;8;15;Sup
