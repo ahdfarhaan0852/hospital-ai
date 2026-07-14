@@ -1,43 +1,10 @@
 [
     {
-        "id": "usr-doc",
-        "nama": "dr. Budi Setiawan Sp.PD",
-        "email": "doctor@hospital.com",
-        "role": "doctor",
-        "password": "scrypt:32768:8:1$RnWIrcqlkKSiVgUA$fe8de003d3e2a6326f4c80288b61b3b8e8b9b581f28bb43a7b777eb86bc8c3aaf8b8ebb142a75b804b9268dae8a84b29b848f71542a1875d6103f5666eb9033e",
-        "status_konfirmasi": true
-    },
-    {
-        "id": "usr-nutri",
-        "nama": "Rina Kartika S.Gz",
-        "email": "nutritionist@hospital.com",
-        "role": "nutritionist",
-        "password": "scrypt:32768:8:1$RnWIrcqlkKSiVgUA$fe8de003d3e2a6326f4c80288b61b3b8e8b9b581f28bb43a7b777eb86bc8c3aaf8b8ebb142a75b804b9268dae8a84b29b848f71542a1875d6103f5666eb9033e",
-        "status_konfirmasi": true
-    },
-    {
-        "id": "usr-order",
-        "nama": "Ani Rahmawati",
-        "email": "order_taker@hospital.com",
-        "role": "order_taker",
-        "password": "scrypt:32768:8:1$RnWIrcqlkKSiVgUA$fe8de003d3e2a6326f4c80288b61b3b8e8b9b581f28bb43a7b777eb86bc8c3aaf8b8ebb142a75b804b9268dae8a84b29b848f71542a1875d6103f5666eb9033e",
-        "status_konfirmasi": true
-    },
-    {
-        "id": "usr-vendor1",
-        "nama": "GDSK Catering - Dapur Utama RSPC",
-        "email": "vendor1@hospital.com",
-        "role": "vendor",
-        "vendor_id": "V001",
-        "password": "scrypt:32768:8:1$RnWIrcqlkKSiVgUA$fe8de003d3e2a6326f4c80288b61b3b8e8b9b581f28bb43a7b777eb86bc8c3aaf8b8ebb142a75b804b9268dae8a84b29b848f71542a1875d6103f5666eb9033e",
-        "status_konfirmasi": true
-    },
-    {
-        "id": "usr-admin",
-        "nama": "System Admin",
-        "email": "admin@hospital.com",
+        "id": "usr-superadmin",
+        "nama": "Super Admin RSPC",
+        "email": "superadmin@rspc.com",
         "role": "admin",
-        "password": "scrypt:32768:8:1$8JdkwEmhaJSHtkU1$bd12aecba511ca87a5bbfb7383fa7b84c3ff8c94ce390ffbff7622c30cdb7f658491d779bb15711904a83e950783ed23eaf9f187c351026821e4abd5d8cd2dbf",
+        "password": "scrypt:32768:8:1$1mCCxjCwPBjznXfX$6fafe894ba928e1a72dc1f41e447ae5e7d5fde9696a9a02c7401f3ccfd9c88fbffeb09c3db056854d873309de8a2923574c05d63285740b77097973e9746a800",
         "status_konfirmasi": true
     }
 ]
