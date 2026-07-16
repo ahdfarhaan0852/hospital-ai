@@ -12,6 +12,13 @@ Sistem ini memecahkan tantangan kritis berikut:
 * **Personalisasi Gizi:** Menyesuaikan porsi dan nutrisi makro (Karbohidrat, Protein, Lemak, Kalori) berdasarkan umur, berat badan, jenis kelamin, dan diagnosa medis pasien secara presisi.
 * **Efisiensi Logistik Katering:** Menghubungkan pesanan gizi secara *real-time* dari bangsal pasien ke dapur katering utama (GDSK) dan melacak pengiriman hingga tiba di rumah sakit.
 
+### A. Analisis Permasalahan (System Constraints & Solution)
+Sebelum implementasi sistem POS Katering AI RSPC, alur pelayanan gizi pasien berjalan secara tradisional dengan kendala operasional sebagai berikut:
+1. **Proses Lama & Manual:** Penulisan resep diet oleh Dokter Penanggung Jawab Pelayanan (DPJP) dilakukan pada kertas fisik $\rightarrow$ disalin perawat ke lembar permintaan makanan bangsal $\rightarrow$ diantar secara fisik ke ruang ahli gizi $\rightarrow$ direkap kembali secara manual untuk dikirim lewat pesan singkat ke dapur katering. Alur ini memakan waktu rata-rata 12 hingga 24 jam.
+2. **Kendala Akurasi Data:** Kerawanan terjadinya salah baca tulisan tangan dokter pada lembar instruksi diet, serta keterbatasan pramusaji dalam mengingat riwayat alergi pasien secara *real-time* saat mencatat pesanan kustom. Hal ini berisiko memicu syok anafilaksis akibat konsumsi alergen.
+3. **Peluang Efisiensi Gizi:** Pemanfaatan algoritma komputasional untuk secara instan menghitung kecocokan profil nutrisi makanan gizi terhadap target kalori pasien menggunakan data antropometri tubuh (umur, berat badan, tinggi badan).
+4. **Solusi yang Ditawarkan:** Platform POS terpadu dengan mesin kecerdasan buatan hibrida (Clinical Rule Engine + Cosine Similarity Recommender) yang memotong jalur birokrasi data menjadi <1 detik dan memastikan keamanan alergen medis sebesar 100%.
+
 ---
 
 ## 2. ARSITEKTUR TEKNOLOGI (TECH STACK)
@@ -165,6 +172,14 @@ graph LR
   * Menyediakan fitur **"Latih Ulang Model AI GDSK"** (Retrain Pipeline) jika terdapat penambahan menu makanan baru di file CSV utama.
   * Mengelola status aktivasi pengguna baru (fitur persetujuan konfirmasi akun).
 
+### F. Dokumentasi Desain Antarmuka (UI Layout Description)
+Berikut adalah deskripsi visual antarmuka sistem yang memvalidasi jalannya aplikasi:
+1. **Portal Login (Otorisasi Akses):** Menyediakan kolom input Email, Password, serta kolom dinamis **Kode Akses Admin RSPC** (khusus role Administrator) dengan tema desain minimalis gelap (dark-tech).
+2. **Dashboard Dokter (Input Pasien):** Menyediakan formulir pengisian data demografi pasien (Nama, MRN, Umur, Kamar, Diagnosa Medis, Alergi) dan tabel daftar pasien aktif yang dirawat.
+3. **Portal Order Taker (Pencatat Pesanan):** Memiliki antarmuka pemilihan menu per kategori. Dilengkapi dengan indikator status gizi visual dan modul *real-time alert* berwarna merah jika menu melanggar pantangan pasien.
+4. **Dashboard Approval Ahli Gizi:** Berisi tabel pesanan masuk, pembanding grafis asupan nutrisi pesanan vs kebutuhan target pasien, serta tombol persetujuan verifikasi klinis.
+5. **Dashboard Vendor Katering:** Rekap porsi produksi per menu harian dan panel kontrol logistik pengiriman makanan kurir.
+
 ---
 
 ## 5. SKEMA DATABASE RELASIONAL (`schema.sql`)
@@ -247,11 +262,75 @@ CREATE TABLE orders (
 );
 ```
 
+### E. Kamus Data Database (Database Data Dictionary)
+Berikut adalah penjelasan rinci tipe data dan batasan kolom dari setiap entitas tabel di atas:
+
+#### 1. Tabel: `users`
+| Nama Kolom | Tipe Data | Batasan (Constraint) | Deskripsi |
+| :--- | :--- | :--- | :--- |
+| `id` | VARCHAR(100) | PRIMARY KEY | Identitas unik pengguna (UUID/Statis) |
+| `nama` | VARCHAR(255) | NOT NULL | Nama lengkap pengguna |
+| `email` | VARCHAR(255) | UNIQUE, NOT NULL | Alamat email (berfungsi sebagai username) |
+| `role` | VARCHAR(50) | NOT NULL | Peran pengguna (admin/doctor/nutritionist/order_taker/vendor) |
+| `vendor_id` | VARCHAR(50) | NULLABLE | Kode vendor katering terkait (V001/V002/V003) |
+| `password` | VARCHAR(255) | NOT NULL | Hash password terenkripsi pengaman akun |
+| `status_konfirmasi` | BOOLEAN | DEFAULT FALSE | Status aktivasi akun oleh Administrator |
+| `created_at` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Waktu pendaftaran akun |
+
+#### 2. Tabel: `patients`
+| Nama Kolom | Tipe Data | Batasan (Constraint) | Deskripsi |
+| :--- | :--- | :--- | :--- |
+| `id` | VARCHAR(100) | PRIMARY KEY | Identitas unik pasien |
+| `mrn` | VARCHAR(100) | UNIQUE, NOT NULL | Medical Record Number (Nomor Rekam Medis) |
+| `nama` | VARCHAR(255) | NOT NULL | Nama lengkap pasien |
+| `umur` | INT | NOT NULL | Usia pasien dalam satuan tahun |
+| `room_id` | VARCHAR(100) | NOT NULL | Identitas kamar perawatan bangsal rumah sakit |
+| `diagnosa` | VARCHAR(255) | DEFAULT 'Umum' | Diagnosa medis dokter (misal: Hipertensi) |
+| `alergi` | VARCHAR(255) | DEFAULT '' | Alergi khusus yang diinput petugas (misal: kacang) |
+| `berat_badan` | DECIMAL(5,2) | NULLABLE | Berat badan pasien (kg) |
+| `tingkat_aktivitas` | VARCHAR(50) | DEFAULT 'sedentary' | Level aktivitas fisik harian pasien |
+| `jenis_kelamin` | VARCHAR(50) | DEFAULT 'Laki-laki' | Jenis kelamin pasien |
+| `diet` | VARCHAR(255) | NOT NULL | Jenis diet terapeutik yang ditentukan oleh AI |
+| `kalori_target` | INT | NOT NULL | Kebutuhan kalori harian pasien (kcal) |
+| `protein_target` | INT | NOT NULL | Batas target protein harian (gram) |
+| `lemak_target` | INT | NOT NULL | Batas target lemak harian (gram) |
+| `karbohidrat_target`| INT | NOT NULL | Batas target karbohidrat harian (gram) |
+| `pantangan` | TEXT | DEFAULT '' | Gabungan daftar bahan makanan yang dilarang |
+| `catatan_klinis` | TEXT | DEFAULT '' | Catatan khusus peringatan/edukasi gizi dari AI |
+
+#### 3. Tabel: `menus`
+| Nama Kolom | Tipe Data | Batasan (Constraint) | Deskripsi |
+| :--- | :--- | :--- | :--- |
+| `id` | SERIAL | PRIMARY KEY | ID unik increment hidangan katering |
+| `nama_menu` | VARCHAR(255) | NOT NULL | Nama hidangan makanan |
+| `kategori` | VARCHAR(50) | NOT NULL | Kategori menu (pokok/lauk_utama/lauk_nabati/sayur/dessert) |
+| `kalori_kcal` | DECIMAL(6,2) | NOT NULL | Kandungan kalori per porsi sajian |
+| `protein_g` | DECIMAL(5,2) | NOT NULL | Kandungan protein per porsi sajian (gram) |
+| `lemak_g` | DECIMAL(5,2) | NOT NULL | Kandungan lemak per porsi sajian (gram) |
+| `karbohidrat_g` | DECIMAL(5,2) | NOT NULL | Kandungan karbohidrat per porsi sajian (gram) |
+| `sodium_mg` | DECIMAL(6,2) | DEFAULT 0.0 | Kandungan Natrium/Sodium (mg) |
+| `potassium_mg` | DECIMAL(6,2) | DEFAULT 0.0 | Kandungan Kalium/Potassium (mg) |
+| `sugar_g` | DECIMAL(5,2) | DEFAULT 0.0 | Kandungan Gula sederhana (gram) |
+| `bahan_makanan` | TEXT | DEFAULT '' | Daftar bahan baku pembuatan makanan (untuk filter alergen) |
+| `jenis_diet` | VARCHAR(255) | NOT NULL | Klasifikasi tipe diet menu tersebut |
+
+#### 4. Tabel: `orders`
+| Nama Kolom | Tipe Data | Batasan (Constraint) | Deskripsi |
+| :--- | :--- | :--- | :--- |
+| `id` | VARCHAR(100) | PRIMARY KEY | ID unik transaksi pemesanan katering |
+| `patient_id` | VARCHAR(100) | FOREIGN KEY | Merujuk ke `patients.id` |
+| `patient_name` | VARCHAR(255) | NOT NULL | Salinan nama pasien pada saat pemesanan |
+| `patient_mrn` | VARCHAR(100) | NOT NULL | Salinan nomor rekam medis pasien |
+| `patient_room` | VARCHAR(100) | NOT NULL | Salinan kamar rawat inap saat order dicatat |
+| `items` | JSONB | NOT NULL | Daftar hidangan terperinci untuk Sarapan, Siang, dan Malam |
+| `status` | VARCHAR(50) | DEFAULT 'Pending' | Status pemesanan (Pending/Approved/Diproduksi/Dikirim/Diterima) |
+| `tanggal` | DATE | NOT NULL | Tanggal pengantaran katering |
+
 ---
 
 ## 6. FITUR INTEGRASI HIS/EMR (INTEGRATION ENDPOINT)
 
-Sistem ini menyediakan endpoint API khusus `/api/ai/recommend-instant` dan `/api/ai/recommend-clinical` yang berfungsi sebagai pintu gerbang (*gateway*) untuk integrasi dengan sistem rumah sakit eksternal seperti **HIS (Hospital Information System)** atau **EMR (Electronic Medical Record)**.
+Sistem ini menyediakan endpoint API khusus `/api/ai/recommend-instant` and `/api/ai/recommend-clinical` yang berfungsi sebagai pintu gerbang (*gateway*) untuk integrasi dengan sistem rumah sakit eksternal seperti **HIS (Hospital Information System)** atau **EMR (Electronic Medical Record)**.
 
 Melalui endpoint ini, sistem rumah sakit lain cukup mengirimkan data pasien mentah (nama, umur, jenis kelamin, diagnosa medis, alergi) dalam format POST JSON, dan API server RSPC akan langsung mengembalikan respon berupa rekomendasi lengkap rencana makanan gizi harian yang tervalidasi secara klinis dalam bentuk payload JSON.
 
@@ -334,9 +413,10 @@ graph TD
 
 ## 8. PERANCANGAN SISTEM & ARSITEKTUR PERANGKAT LUNAK
 
-### A. Diagram Konteks Sistem (System Context Diagram)
+### A. Diagram Konteks Sistem & DFD Level 0
 Sistem POS Katering AI RSPC bertindak sebagai penghubung pusat data transaksi gizi dengan entitas eksternal:
 
+#### 1. Diagram Konteks (Context Diagram)
 ```mermaid
 graph LR
     HIS[Hospital Information System - HIS] -->|Data Demografi Pasien| SYS((POS Katering AI RSPC))
@@ -344,6 +424,25 @@ graph LR
     SYS -->|Notifikasi Status Pengiriman| WH[Webhook Kurir Logistik]
     SYS -->|Laporan Transaksi Katering| ADM[Administrator GDSK]
     SYS -->|Instruksi Produksi Makanan| VND[Dapur Catering GDSK]
+```
+
+#### 2. Data Flow Diagram (DFD Level 0)
+```mermaid
+graph TD
+    Dtr[Dokter] -->|1. Data Pasien & Diagnosa| P1(Proses 1.0: Admisi Pasien)
+    P1 -->|Simpan Profil Medis| DB_Pat[(Tabel Patients)]
+    
+    OTr[Order Taker] -->|2. Request Menu AI/Kustom| P2(Proses 2.0: Pembuatan Rencana Makan)
+    DB_Pat -->|Baca Data Pantangan & Diet| P2
+    P2 -->|Simpan Rencana Makan Pending| DB_Ord[(Tabel Orders)]
+    
+    Ntr[Ahli Gizi] -->|3. Validasi & Approval| P3(Proses 3.0: Verifikasi Klinis Ahli Gizi)
+    DB_Ord -->|Evaluasi Nutrisi & Alergen| P3
+    P3 -->|Update Order Status Approved| DB_Ord
+    
+    Vnd[Vendor Dapur] -->|4. Update Status Produksi| P4(Proses 4.0: Manajemen Produksi & Distribusi)
+    DB_Ord -->|Agregasi Menu Masakan| P4
+    P4 -->|Pembaruan Pengiriman Logistik| DB_Ord
 ```
 
 ### B. Spesifikasi Kasus Penggunaan (Use Case Specification)
@@ -386,7 +485,28 @@ Aktivitas penyusunan makanan oleh `MealBuilder` berjalan dengan alur sebagai ber
 6. Memilih satu item menu secara acak dari top 3 kandidat teratas hasil rekomendasi AI.
 7. Menggabungkan seluruh hidangan dan menyimpannya sebagai satu rencana harian terpadu.
 
-### D. Deskripsi Diagram Sekuens (Sequence Diagram Description)
+### D. Diagram Status Pesanan (State Diagram Lifecycle Order)
+Siklus transisi status pemesanan katering dari draf awal hingga dikonsumsi pasien di RSPC diatur oleh diagram status berikut:
+
+```mermaid
+stateDiagram-v2
+    [*] --> Pending : Pembuatan Order (Pramusaji)
+    Pending --> Approved : Validasi Gizi (Ahli Gizi)
+    Pending --> Rejected : Penolakan Diet Gizi (Ahli Gizi)
+    Rejected --> Pending : Koreksi Menu & Simpan
+    Approved --> Diproduksi : Mulai Memasak (Dapur Vendor)
+    Diproduksi --> Dikirim : Dalam Perjalanan Kurir
+    Dikirim --> Diterima : Tiba di Kamar Pasien (Completed)
+    Diterima --> [*]
+```
+
+Aturan Transisi Status:
+1. `Pending` $\rightarrow$ `Approved`: Terjadi saat Ahli Gizi menekan tombol verifikasi dan tidak ditemukan bahaya alergen pada menu.
+2. `Approved` $\rightarrow$ `Diproduksi`: Vendor katering GDSK mengubah status pesanan saat proses produksi bahan masakan dimulai.
+3. `Diproduksi` $\rightarrow$ `Dikirim`: Dapur katering menyelesaikan pengemasan makanan dan kurir membawa wadah gizi dalam proses pengantaran logistik.
+4. `Dikirim` $\rightarrow$ `Diterima`: Staf perawat bangsal memindai tanda terima makanan saat hidangan diserahkan langsung ke pasien.
+
+### E. Deskripsi Diagram Sekuens (Sequence Diagram Description)
 Alur interaksi pesan pada proses pemesanan makanan secara kustom berjalan sebagai berikut:
 1. **Client Browser** mengirimkan permintaan HTTP GET ke API Server Flask (`/api/patients/<id>/recommend`) untuk mendapatkan kandidat menu.
 2. **Flask API App (`app.py`)** menerima permintaan dan memanggil fungsi `recommend()` pada objek `MenuRecommender`.
@@ -397,13 +517,49 @@ Alur interaksi pesan pada proses pemesanan makanan secara kustom berjalan sebaga
 7. **`DatabaseManager`** melakukan koneksi ke database cloud Supabase untuk memasukkan record pesanan baru. Jika gagal, ia akan menulis data ke database file lokal JSON (`orders.json`).
 8. **`DatabaseManager`** mengembalikan status keberhasilan ke Flask API, yang kemudian meneruskan respon sukses `201 Created` ke Client Browser untuk menampilkan pesan notifikasi kepada pengguna.
 
-### E. Penjelasan ERD (ERD Explanation)
+### F. Penjelasan ERD (ERD Explanation)
 Relasi data diatur secara ketat dengan integritas referensial:
 * **One-to-Many (`patients` to `orders`):** Satu pasien dapat memiliki banyak catatan pesanan makanan harian selama masa perawatan inapnya di RSPC. Kunci asing `patient_id` pada tabel `orders` merujuk ke primary key `id` pada tabel `patients`.
 * **Many-to-Many (implisit via JSON pada `orders`):** Satu order berisi banyak item menu hidangan (`menus`). Relasi ini disimpan secara denormalisasi di kolom `items` pada tabel `orders` menggunakan tipe data `JSONB` PostgreSQL untuk performa query pencarian menu cepat.
 * **Many-to-One (`users` to `vendor`):** Banyak staf pengguna dengan peran vendor dapat terikat pada satu entitas vendor catering utama (`vendor_id` merujuk pada kode identitas katering seperti `V001`).
 
-### F. Normalisasi Basis Data (Database Normalization)
+### G. Struktur Direktori Proyek (Project Folder Structure)
+Dokumentasi tata letak berkas arsitektur proyek POS Katering AI RSPC adalah sebagai berikut:
+
+```
+hospital-ai/
+├── .agents/                    # Konfigurasi agen AI asisten pengembang
+├── backend/                    # Modul Backend (Flask Server)
+│   ├── models/                 # Model AI (Scaler & Vectorizer dump)
+│   ├── app.py                  # Pintu gerbang API routing Flask
+│   ├── clinical_rules.py       # Engine penentu aturan diet terapeutik
+│   ├── database.py             # Handler koneksi Supabase & local JSON
+│   ├── meal_builder.py         # Heuristik penyusun paket makan harian
+│   ├── recommendation.py       # Engine similarity pencari kecocokan menu
+│   ├── seed.py                 # Script inisialisasi basis data awal
+│   ├── setup_supabase.py       # Migrasi tabel relasional Supabase
+│   └── schema.sql              # Skema DDL PostgreSQL
+├── data/                       # Penyimpanan Berkas & Dataset
+│   ├── local_db/               # Basis data fallback (JSON)
+│   │   ├── users.json
+│   │   ├── patients.json
+│   │   ├── menus.json
+│   │   └── orders.json
+│   ├── menu_fix.csv            # Dataset menu masakan katering
+│   └── diet_mapping.xlsx       # Dataset aturan medis diet gizi
+├── frontend/                   # Modul Frontend (React + Vite App)
+│   ├── src/                    # Source Code React
+│   │   ├── assets/             # Asset gambar & logo
+│   │   ├── App.jsx             # Logika antarmuka dashboard utama
+│   │   ├── index.css           # Desain CSS tema dark-tech Tailwind
+│   │   └── main.jsx            # Entry point integrasi DOM React
+│   ├── package.json            # Daftar pustaka dependency javascript
+│   └── tailwind.config.js      # Konfigurasi utility Tailwind CSS
+├── requirements.txt            # Daftar library Python backend
+└── SYSTEM_REPORT.md            # Dokumentasi sistem terpadu
+```
+
+### H. Normalisasi Basis Data (Database Normalization)
 Struktur database dikonstruksi hingga memenuhi bentuk normal ketiga (3NF):
 * **Bentuk Normal Pertama (1NF):** Dipenuhi dengan memastikan semua kolom memiliki nilai tunggal (atomic). Kolom kompleks seperti daftar bahan makanan disimpan sebagai string csv sederhana, dan item pesanan terstruktur rapi.
 * **Bentuk Normal Kedua (2NF):** Dipenuhi karena semua atribut non-key (seperti nama pasien, diagnosa, umur, target kalori) bergantung sepenuhnya pada *Primary Key* masing-masing tabel (seperti `id` pasien pada tabel `patients`). Tidak ada ketergantungan parsial pada primary key komposit.
@@ -555,15 +711,28 @@ Fungsi BuildDailyMeals(pasien_id)
 
 ## 10. DOKUMENTASI DATASET & SPESIFIKASI API
 
-### A. Dokumentasi Dataset (Dataset Documentation)
-Sistem menggunakan dua dataset referensi utama untuk memandu keputusan klinis AI:
-1. **Katalog Menu (`menu_fix.csv`):**
-   * Berisi daftar hidangan katering dapur GDSK.
-   * Jumlah record: 120 item hidangan.
-   * Atribut penting: `Nama Menu`, `Kategori`, `Kalori`, `Protein_g`, `Lemak_g`, `Karbohidrat_g`, `Sodium_mg`, `Potassium_mg`, `Sugar_g`, `Bahan Makanan`, `Tipe Diet/Deskripsi`.
-2. **Aturan Diet Klinis (`diet_mapping.xlsx`):**
-   * Berisi pedoman intervensi medis komite gizi RSPC.
-   * Atribut penting: `diagnosa` (kunci pencarian), `jenis_diet`, `kalori_target_kcal_per_hari`, `protein_target_g`, `lemak_target_g`, `karbohidrat_target_g`, `pantangan_makanan`, `catatan_klinis`.
+### A. Dokumentasi Dataset AI Lengkap
+Sistem AI ini mengandalkan set data terstruktur guna menjamin presisi keputusan dietetika gizi:
+
+1. **Dataset Menu Makanan (`menu_fix.csv`):**
+   * Menyimpan profil hidangan lengkap dengan data nutrisi makro dan mikro.
+   * *Skema Atribut:*
+     * `nama_menu` (String): Nama sajian makanan.
+     * `kategori` (String): Klasifikasi saji (`pokok`, `lauk_utama`, `lauk_nabati`, `sayur`, `dessert`).
+     * `kalori_kcal` (Float): Kandungan kalori.
+     * `protein_g` / `lemak_g` / `karbohidrat_g` (Float): Kandungan gizi makro.
+     * `sodium_mg` / `potassium_mg` / `sugar_g` (Float): Kandungan zat gizi mikro sensitif.
+     * `bahan_makanan` (Text): Daftar bahan baku pembuatan makanan (untuk filter alergen).
+     * `jenis_diet` (String): Klasifikasi tipe diet menu tersebut.
+2. **Dataset Aturan Medis & Diet (`diet_mapping.xlsx`):**
+   * Mengatur target gizi klinis berdasarkan diagnosis penyakit pasien RSPC.
+   * *Skema Atribut:*
+     * `diagnosa` (String): Nama penyakit/gejala klinis.
+     * `jenis_diet` (String): Kode jenis diet rumah sakit (misal: Diet DM).
+     * `kalori_target_kcal_per_hari` (Int): Batas target kalori dasar harian.
+     * `protein_target_g` / `lemak_target_g` / `karbohidrat_target_g` (Int): Target makronutrisi harian.
+     * `pantangan_makanan` (String): Daftar bahan baku yang dilarang dikonsumsi.
+     * `catatan_klinis` (String): Catatan peringatan medis.
 
 ### B. Hubungan Antar Dataset (Dataset Relationship)
 Kedua dataset tersebut terhubung secara dinamis pada saat eksekusi pipeline AI:
@@ -588,7 +757,28 @@ classDiagram
 
 ### C. Spesifikasi API RESTful (API Specification)
 
-#### 1. Endpoint: Login Pengguna
+#### 1. Tabel Ringkasan API Endpoints
+Berikut adalah katalog API yang diekspos oleh server Flask backend (`app.py`):
+
+| Method | Endpoint Route | Parameter Input | Output Respon | Deskripsi |
+| :--- | :--- | :--- | :--- | :--- |
+| `POST` | `/api/auth/login` | JSON (email, password, access_code) | JSON (user details) | Autentikasi hak akses staf pengguna |
+| `POST` | `/api/auth/register` | JSON (nama, email, password, role) | JSON (message, user) | Pendaftaran akun pengguna baru |
+| `GET` | `/api/patients` | - | JSON (list patients) | Mengambil seluruh data pasien dirawat |
+| `POST` | `/api/patients` | JSON (nama, mrn, umur, kamar, diagnosa) | JSON (patient record) | Mendaftarkan rekam medis pasien baru |
+| `PUT` | `/api/patients/<id>` | JSON (field yang diperbarui) | JSON (updated patient) | Mengubah data demografi/klinis pasien |
+| `GET` | `/api/menus` | `patient_id` (optional query) | JSON (list menus) | Mengambil katalog menu masakan |
+| `GET` | `/api/patients/<id>/recommend`| `kategori`, `waktu_makan`, `max_cal` | JSON (list recommended menus) | Memanggil AI recommend gizi kustom |
+| `GET` | `/api/patients/<id>/meal-builder`| - | JSON (daily meal plan packages) | Mengambil rencana makan AI harian |
+| `POST` | `/api/orders` | JSON (patient_id, items, tanggal) | JSON (created order) | Membuat pesanan katering baru |
+| `PUT` | `/api/orders/<id>/status`| JSON (status baru) | JSON (updated order) | Memperbarui status logistik kurir |
+| `GET` | `/api/stats` | - | JSON (dashboard metrics) | Mengambil data grafik statistik admin |
+| `POST` | `/api/ai/retrain` | - | JSON (status retrain) | Melatih ulang model StandardScaler |
+| `POST` | `/api/ai/recommend-instant` | JSON (patient info lengkap) | JSON (daily meals + catalog) | Integrasi instant HIS/EMR pihak ketiga |
+
+#### 2. Skema Detail Payload API Utama
+
+##### Endpoint: Login Pengguna
 * **Protokol / Method:** `POST /api/auth/login`
 * **Request Header:** `Content-Type: application/json`
 * **Request Body Schema:**
@@ -621,7 +811,7 @@ classDiagram
 }
 ```
 
-#### 2. Endpoint: Rekomendasi Menu Pasien
+##### Endpoint: Rekomendasi Menu Pasien
 * **Protokol / Method:** `GET /api/patients/<id>/recommend`
 * **Query Parameters:**
   * `kategori`: Kategori menu (`pokok`, `lauk_utama`, `lauk_nabati`, `sayur`, `dessert`)
@@ -642,7 +832,7 @@ classDiagram
 ]
 ```
 
-#### 3. Endpoint: Integrasi HIS / EMR Instant Recommendation
+##### Endpoint: Integrasi HIS / EMR Instant Recommendation
 * **Protokol / Method:** `POST /api/ai/recommend-instant`
 * **Request Body Schema:**
 ```json
@@ -751,7 +941,7 @@ Pengujian dan evaluasi keandalan model kecerdasan buatan dilakukan melalui:
 Untuk mengantisipasi lonjakan pertumbuhan transaksi order katering rumah sakit yang dapat mencapai jutaan data order per tahun:
 1. **Optimasi Indeks Database:** Tabel `orders` dan `patients` dikonfigurasi menggunakan indeks sekunder pada kolom kunci pencarian utama seperti `patient_id`, `mrn`, dan `tanggal`.
 2. **Query JSONB:** Pemanfaatan kolom `JSONB` pada PostgreSQL Supabase mendukung pencarian relasi many-to-many secara efisien tanpa memerlukan join tabel yang kompleks.
-3. **Database Caching:** Dapat ditambahkan lapisan caching caching memory (seperti Redis) di masa mendatang untuk menyimpan rekomendasi menu pasien yang jarang berubah.
+3. **Database Caching:** Dapat ditambahkan lapisan caching memory (seperti Redis) di masa mendatang untuk menyimpan rekomendasi menu pasien yang jarang berubah.
 
 ### B. Batasan Sistem Saat Ini (Limitations)
 * **Ketergantungan Data Statis:** Rekomendasi AI sangat bergantung pada kelengkapan pengisian kolom `bahan_makanan` dan nilai gizi numerik pada dataset menu katering. Jika terjadi kesalahan input di database katalog menu, AI berpotensi meloloskan bahan alergen.
